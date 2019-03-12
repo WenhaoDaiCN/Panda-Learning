@@ -1,0 +1,3 @@
+本目录为Visual C++ Redistributable for Visual Studio 2015
+微软官方下载地址为https://www.microsoft.com/en-us/download/details.aspx?id=48145
+根据你的操作系统32/64选择x86/x64版本vc_redist安装，即可解决不能使用问题。
