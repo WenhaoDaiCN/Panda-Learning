@@ -6,6 +6,8 @@
 
 觉得好用请点击右上star一下。
 
+使用异常或者有更好的建议请联系邮箱 mypandalearning@gmail.com
+
 ## **下载地址**
 
 [Panda-Learning](https://github.com/Alivon/Panda-Learning/archive/master.zip)
