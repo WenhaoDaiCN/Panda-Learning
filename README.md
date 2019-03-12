@@ -4,6 +4,8 @@
 
 熊猫学习Panda-Learning是一个辅助学习强国的软体,帮助挤不出时间，却仍然需要学习的积极分子，熊猫学习强国(xuexiqiangguo)
 
+觉得好用请点击右上star一下。
+
 ## **下载地址**
 
 [Panda-Learning](https://github.com/Alivon/Panda-Learning/archive/master.zip)
