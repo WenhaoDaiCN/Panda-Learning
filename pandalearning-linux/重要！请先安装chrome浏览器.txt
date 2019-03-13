@@ -1,0 +1,5 @@
+请下载安装最新chrome  浏览器
+版本(Version) 73.0.3683.xx
+https://www.google.com/chrome/
+ .deb（适用于 Debian/Ubuntu）
+ .rpm（适用于 Fedora/openSUSE）
