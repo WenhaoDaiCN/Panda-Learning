@@ -12,13 +12,21 @@
 
 [Panda-Learning](https://github.com/Alivon/Panda-Learning/archive/master.zip)
 
+[linux桌面版](https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/pandalearning-linux.zip?raw=true)  linux需要安装chrome浏览器下载链接
+
+[浏览器下载rpm（适用于 Fedora/openSUSE](https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/google-chrome-stable_current_x86_64.rpm?raw=true)
+
+[ 浏览器下载deb（适用于 Debian/Ubuntu）](https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/google-chrome-stable_current_amd64.deb?raw=true)
+
 ## 程序特性
+
+多用户同时使用
 
 多线程学习，大大缩减学习时间, 后期会开发更快的学习加分方法。
 
 解决重复文章不加分问题，正确使用每天都能学满31分
 
-linux版本如有需要可联系上传，
+linux桌面版本以及上传，
 
 若有需求可开发APP版本及自动答题系统
 
