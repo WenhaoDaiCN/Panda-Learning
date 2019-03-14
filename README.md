@@ -8,6 +8,16 @@
 
 使用异常或者有更好的建议请联系邮箱 mypandalearning@gmail.com
 
+## 跟新说明
+
+- 2019.03.14 加入活跃时间判断，优化用户自行学完文章篇书却没有学习时长等极端情况。
+
+  开放python源码，可以自行在各平台使用，请勿商用，转发请注明出处
+
+  源码下载
+
+
+
 ## **下载地址**
 
 [Panda-Learning](https://github.com/Alivon/Panda-Learning/archive/master.zip)
