@@ -14,7 +14,7 @@
 
   开放python源码，可以自行在各平台使用，请勿商用，转发请注明出处
 
-  源码下载
+  [源码下载](https://raw.githubusercontent.com/Alivon/Panda-Learning/master/pandalearn.py)
 
 
 
