@@ -136,6 +136,7 @@ def learn_article(readnum, readtime, log, article):
             time.sleep(1)
         driver.execute_script('window.scrollTo(0, document.body.scrollHeight)')
         readtime -= 4 * 60
+    driver.get(eval(list.group(1))[0]["static_page_url"])
     for i in range(readtime):
         time.sleep(1)
         print("\r正在多线程学习中，文章剩余{}秒".format(readtime - i), end="")
@@ -171,6 +172,7 @@ def learn_video(cookies, videonum, videotime, log, video):
             time.sleep(1)
         driver_video.execute_script('window.scrollTo(0, document.body.scrollHeight)')
         videotime -= 5 * 60
+    driver_video.get(link[log])
     for i in range(videotime):
         time.sleep(1)
         print("\r正在多线程学习中，视频剩余{}秒".format(videotime - i), end="")
