@@ -37,7 +37,7 @@
 
 [ linux浏览器下载deb（适用于 Debian/Ubuntu）](https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/google-chrome-stable_current_amd64.deb?raw=true)
 
-关于下载缓慢问题可以尝试用迅雷等工具下载
+**关于下载缓慢问题可以尝试用迅雷等工具下载**
 
 ## 程序特性
 
@@ -93,4 +93,6 @@
 windous有可能提示`无法定位程序输入点ucrtbase.terminate于动态链接库api-ms-win-crt-runtime-|1-1-0.dll`等缺失dll文件的问题而无法使用，尝试安装`Visual C++ Redistributable for Visual Studio 2015`该程序包含在`不能运行时安装`的目录中
 
 根据你的操作系统32/64选择x86/x64版本vc_redist安装，即可解决不能使用问题。
+
+
 
