@@ -25,7 +25,11 @@
 
 ## **下载地址**
 
-[Panda-Learning](https://github.com/Alivon/Panda-Learning/archive/master.zip)
+[windows版本](https://github.com/Alivon/Panda-Learning/archive/master.zip)
+
+[macos](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/pandalearning-mac.zip)
+
+[macos浏览器](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/googlechrome.dmg)（10.10以上版本）
 
 [linux桌面版](https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/pandalearning-linux.zip?raw=true)  linux需要安装chrome浏览器下载链接
 
