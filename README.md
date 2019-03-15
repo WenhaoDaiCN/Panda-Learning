@@ -16,6 +16,8 @@
 
   [源码下载](https://raw.githubusercontent.com/Alivon/Panda-Learning/master/pandalearn.py)
 
+- 2019.03.15 修复win7 32位系统不能使用问题！！！
+
 
 
 ## **下载地址**
@@ -24,9 +26,9 @@
 
 [linux桌面版](https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/pandalearning-linux.zip?raw=true)  linux需要安装chrome浏览器下载链接
 
-[浏览器下载rpm（适用于 Fedora/openSUSE](https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/google-chrome-stable_current_x86_64.rpm?raw=true)
+[linux浏览器下载rpm（适用于 Fedora/openSUSE)](https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/google-chrome-stable_current_x86_64.rpm?raw=true)
 
-[ 浏览器下载deb（适用于 Debian/Ubuntu）](https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/google-chrome-stable_current_amd64.deb?raw=true)
+[ linux浏览器下载deb（适用于 Debian/Ubuntu）](https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/google-chrome-stable_current_amd64.deb?raw=true)
 
 ## 程序特性
 
@@ -34,13 +36,13 @@
 
 多线程学习，大大缩减学习时间, 后期会开发更快的学习加分方法。
 
+活跃时间学满只需25min
+
 解决重复文章不加分问题，正确使用每天都能学满31分
 
-linux桌面版本以及上传，
+linux桌面版本上传，
 
-若有需求可开发APP版本及自动答题系统
-
-
+mac 开发中
 
 ## 使用方法
 
@@ -55,8 +57,6 @@ linux桌面版本以及上传，
 ## 不能使用解决办法
 
 不支持windowsXP，支持WIN7和WIN10操作系统
-
-linux版本如有需要可联系上传
 
 windous有可能提示`无法定位程序输入点ucrtbase.terminate于动态链接库api-ms-win-crt-runtime-|1-1-0.dll`等缺失dll文件的问题而无法使用，尝试安装`Visual C++ Redistributable for Visual Studio 2015`该程序包含在`不能运行时安装`的目录中
 
