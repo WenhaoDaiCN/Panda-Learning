@@ -27,7 +27,7 @@
 
 [windows版本](https://github.com/Alivon/Panda-Learning/archive/master.zip)
 
-[macos](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/pandalearning-mac.zip)
+[macos版本](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/pandalearning-mac.zip)
 
 [macos浏览器](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/googlechrome.dmg)（10.10以上版本）
 
@@ -37,19 +37,19 @@
 
 [ linux浏览器下载deb（适用于 Debian/Ubuntu）](https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/google-chrome-stable_current_amd64.deb?raw=true)
 
+关于下载缓慢问题可以尝试用迅雷等工具下载
+
 ## 程序特性
 
-多用户同时使用
+支持WIN7和WIN10，mac os ，linux操作系统
 
-多线程学习，大大缩减学习时间, 后期会开发更快的学习加分方法。
+支持多用户同时使用
 
-活跃时间学满只需25min
+多线程学习，大大缩减学习时间，活跃时间学满只需25min
 
 解决重复文章不加分问题，正确使用每天都能学满31分
 
-linux桌面版本上传，
 
-mac 开发中
 
 ## 使用方法
 
@@ -71,10 +71,24 @@ mac 开发中
 
 - 使用终端 找到文件夹位置 
 
+- 
 
-## 不能使用解决办法
+- 其他同windows
 
-不支持windowsXP，支持WIN7和WIN10操作系统
+
+
+#### Linux
+
+- 必须先安装chrome浏览器
+- 双击执行
+- 其他同windows
+
+
+
+
+
+
+## win下报错解决办法
 
 windous有可能提示`无法定位程序输入点ucrtbase.terminate于动态链接库api-ms-win-crt-runtime-|1-1-0.dll`等缺失dll文件的问题而无法使用，尝试安装`Visual C++ Redistributable for Visual Studio 2015`该程序包含在`不能运行时安装`的目录中
 
