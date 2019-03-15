@@ -69,9 +69,9 @@
 
 - 直接双击程序会出错！！
 
-- 使用终端 找到文件夹位置 
+- 解压文件，用终端进入该位置  `yournameMac:pandalearning-mac yourname$`
 
-- 
+- 输入 ` ./pandalearn`  执行程序
 
 - 其他同windows
 
