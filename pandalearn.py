@@ -1,6 +1,6 @@
 # coding=utf-8
 import time
-from datetime import datetime
+import datetime
 from selenium import webdriver
 # from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 # from selenium.webdriver.common.by import By
@@ -28,7 +28,7 @@ def user():
 
 
 def login():
-    print(datetime.now(), "程序开启")
+    print(datetime.datetime.now(), "程序开启")
     driver.get("https://pc.xuexi.cn/points/login.html")
     try:
         remover = WebDriverWait(driver, 30, 0.2).until(lambda driver: driver.find_element_by_class_name("redflagbox"))
@@ -49,7 +49,7 @@ def login():
     else:
         driver.execute_script('arguments[0].remove()', remover)
         driver.execute_script('window.scrollTo(document.body.scrollWidth/2 - 220 , 0)')
-    print(datetime.now(), "此刻请扫描二维码...")
+    print(datetime.datetime.now(), "此刻请扫描二维码...")
 
     WebDriverWait(driver, 270).until(EC.title_is(u"我的学习"))
     cookies = driver.get_cookies()
@@ -103,6 +103,7 @@ def check():
         login()
 
 
+
 def get_list():
     if os.path.exists("./user/{}/log.txt".format(user_name)):
         print("历史学习记录读取成功")
@@ -112,34 +113,54 @@ def get_list():
         get_list()
     with open("./user/{}/log.txt".format(user_name), "r", encoding="utf8") as fp:
         log = int(fp.read())
-    article = requests.get(
-        "https://www.xuexi.cn/c06bf4acc7eef6ef0a560328938b5771/data9a3668c13f6e303932b5e0e100fc248b.js").content.decode(
-        "utf8")
+
+    url_ArticleList = (
+        "https://www.xuexi.cn/c06bf4acc7eef6ef0a560328938b5771/data9a3668c13f6e303932b5e0e100fc248b.js",
+        "https://www.xuexi.cn/7097477a9643eacffe4cc101e4906fdb/data9a3668c13f6e303932b5e0e100fc248b.js",
+        "https://www.xuexi.cn/bab787a637b47d3e51166f6a0daeafdb/data9a3668c13f6e303932b5e0e100fc248b.js",
+        "https://www.xuexi.cn/72ac54163d26d6677a80b8e21a776cfa/data9a3668c13f6e303932b5e0e100fc248b.js",
+        "https://www.xuexi.cn/03c8b56d5bce4b3619a9d6c2dfb180ef/data9a3668c13f6e303932b5e0e100fc248b.js",
+        "https://www.xuexi.cn/d05cad69216e688d304bb91ef3aac4c6/data9a3668c13f6e303932b5e0e100fc248b.js",
+         )
+    article_List = process_ArticleList(url_ArticleList)
+    
     video = requests.get(
         "https://www.xuexi.cn/4426aa87b0b64ac671c96379a3a8bd26/datadb086044562a57b441c24f2af1c8e101.js").content.decode(
         "utf8")
-    return log, article, video
+    return log, article_List, video
 
 
-def learn_article(readnum, readtime, log, article):
-    links = []
-    pattern = r"list\"\:(.+),\"count\"\:"
-    list = re.search(pattern, article)
-    for i in range(log, log + readnum):
-        links.append(eval(list.group(1))[i]["static_page_url"])
+def process_ArticleList(url_Tuple):
+    #today = time.strftime('%Y.%m.%d',time.localtime(time.time()))
+    today = datetime.date.today()
+    oneday = datetime.timedelta(days=1) 
+    yesterday = today - oneday
+    _url = []
+    for i in range (len(url_Tuple)):        
+        _article = requests.get(url_Tuple[i]).content.decode("utf8")           
+        _pattern = r"list\"\:(.+),\"count\"\:"
+        _list = eval(re.search(_pattern, _article).group(1))
+        for j in range(20):
+            if ( _list[j]["original_time"][0:10] == yesterday.strftime('%Y-%m-%d') ):    
+                _url.append(_list[j]["static_page_url"])
+    #print("["+yesterday.strftime('%Y-%m-%d')+"]ArticleListLength:"+str(len(_url)))
+    return _url
+
+def learn_article(readnum, readtime, log, article_List):
+    #for i in range(len(article_List)):
     for i in range(readnum):
-        driver.get(links[i])
+        driver.get(article_List[i])
         for j in range(4 * 60):
             driver.execute_script(
                 'window.scrollTo(0, document.body.scrollHeight/240*{})'.format(j))
-            print("\r正在多线程学习中，文章剩余{}秒".format(readtime - j), end="")
+            print("\r学习文章数量，+剩余"+readnum+"个，文章剩余{}秒".format(readtime - j), end="")
             time.sleep(1)
         driver.execute_script('window.scrollTo(0, document.body.scrollHeight)')
         readtime -= 4 * 60
-    driver.get(eval(list.group(1))[0]["static_page_url"])
+    driver.get(article_List[1])
     for i in range(readtime):
         time.sleep(1)
-        print("\r正在多线程学习中，文章剩余{}秒".format(readtime - i), end="")
+        print("\r学习文章时长，文章剩余{}秒".format(readtime - i), end="")
         driver.execute_script('window.scrollTo(0, document.body.scrollHeight)')
     print("文章学习完成")
 
@@ -148,9 +169,9 @@ def learn_video(cookies, videonum, videotime, log, video):
     options = Options()
     options.binary_location = "./chrome/chrome.exe"
     options.add_argument('blink-settings=imagesEnabled=false')  # 不加载图片, 提升速度
-    options.add_argument('--mute-audio')  # 关闭声音
     options.add_argument('disable-infobars')
-    driver_video = webdriver.Chrome(executable_path="./chromedriver.exe", chrome_options=options)  # 实例化chrome
+    options.add_argument('--mute-audio')  # 关闭声音
+    driver_video = webdriver.Chrome(executable_path="./chromedriver.exe", options=options)  # 实例化chrome
     driver_video.set_window_size(400, 500)
     driver_video.get("https://pc.xuexi.cn/points/my-study.html")  # 读取上下文
     driver_video.delete_all_cookies()  # 删除未登陆cookie
@@ -183,7 +204,7 @@ def learn_video(cookies, videonum, videotime, log, video):
 
 
 def learn_main(cookies, readnum, videonum, readtime, videotime):
-    hour_now = datetime.now().hour
+    hour_now = datetime.datetime.now().hour
     if hour_now in [6, 7, 8, 12, 13, 20, 21, 22]:
         print("现在为活跃时间，学习效率加倍")
         readnum //= 2
@@ -214,9 +235,9 @@ if __name__ == '__main__':
     options = Options()
     options.binary_location = "./chrome/chrome.exe"
     options.add_argument('blink-settings=imagesEnabled=false')  # 不加载图片, 提升速度
-    options.add_argument('--mute-audio')  # 关闭声音
     options.add_argument('disable-infobars')
-    driver = webdriver.Chrome(executable_path="./chromedriver.exe", chrome_options=options)  # 实例化chrome
+    options.add_argument('--mute-audio')  # 关闭声音
+    driver = webdriver.Chrome(executable_path="./chromedriver.exe", options=options)  # 实例化chrome
     driver.set_window_size(400, 500)
     if os.path.exists("./user/{}".format(user_name)):
         pass
