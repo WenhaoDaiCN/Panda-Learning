@@ -149,6 +149,7 @@ def learn_video(cookies, videonum, videotime, log, video):
     options.binary_location = "./chrome/chrome.exe"
     options.add_argument('blink-settings=imagesEnabled=false')  # 不加载图片, 提升速度
     options.add_argument('--mute-audio')  # 关闭声音
+    options.add_argument('disable-infobars')
     driver_video = webdriver.Chrome(executable_path="./chromedriver.exe", chrome_options=options)  # 实例化chrome
     driver_video.set_window_size(400, 500)
     driver_video.get("https://pc.xuexi.cn/points/my-study.html")  # 读取上下文
@@ -214,6 +215,7 @@ if __name__ == '__main__':
     options.binary_location = "./chrome/chrome.exe"
     options.add_argument('blink-settings=imagesEnabled=false')  # 不加载图片, 提升速度
     options.add_argument('--mute-audio')  # 关闭声音
+    options.add_argument('disable-infobars')
     driver = webdriver.Chrome(executable_path="./chromedriver.exe", chrome_options=options)  # 实例化chrome
     driver.set_window_size(400, 500)
     if os.path.exists("./user/{}".format(user_name)):
