@@ -19,7 +19,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # 警告等级
 
 def info():
     print("熊猫学习下载地址为 https://github.com/Alivon/Panda-Learning")
-    print("该链接有详细使用说明，转发请发此链接给真正需要使用的人，而不是使此款软体消失的人")
+    print("该链接有详细使用说明，转发请发此链接给真正需要使用的人，而不是使此款程序消失的人")
 
 
 def user():
@@ -48,7 +48,14 @@ def login():
         pass
     else:
         driver.execute_script('arguments[0].remove()', remover)
-        driver.execute_script('window.scrollTo(document.body.scrollWidth/2 - 220 , 0)')
+        js = 'var link = document.createElement("a");' \
+             'link.href="https://login.dingtalk.com/login/index.htm?goto=https%3A%2F%2Foapi.dingtalk.com%2Fconnect%2Foauth2%2Fsns_authorize%3Fappid%3Ddingoankubyrfkttorhpou%26response_type%3Dcode%26scope%3Dsnsapi_login%26redirect_uri%3Dhttps%3A%2F%2Fpc-api.xuexi.cn%2Fopen%2Fapi%2Fsns%2Fcallback";' \
+             'document.getElementById("app").appendChild(link);' \
+             'link.innerHTML="钉钉账号登陆";' \
+             'link.style.cssText = "display:block;margin:10px auto;font-size: 16px;background-color: #008be6;color: white;text-align: center;text-decoration: none;width:214px;height:26px;border-radius:8px;;"'
+        driver.execute_script(js)
+
+        driver.execute_script('window.scrollTo(document.body.scrollWidth/2 - 200 , 0)')
     print(datetime.now(), "此刻请扫描二维码...")
 
     WebDriverWait(driver, 270).until(EC.title_is(u"我的学习"))
@@ -59,7 +66,7 @@ def login():
     check()
 
 
-def readpoint():
+def readpoint(driver):
     WebDriverWait(driver, 30).until(lambda driver: driver.find_element_by_class_name("my-points-card-text"))
     points = driver.find_elements_by_class_name("my-points-card-text")
     readnum = int(points[1].text.split("/")[1][:-1]) - int(points[1].text.split("/")[0][:-1])
@@ -93,7 +100,7 @@ def check():
             WebDriverWait(driver, 10).until(
                 lambda driver: driver.find_element_by_class_name("my-points-card-subtitle-once-value"))
             print("登陆成功，即将开始自动学习")
-            readnum, videonum, readtime, videotime = readpoint()
+            readnum, videonum, readtime, videotime = readpoint(driver)
             learn_main(cookies, readnum, videonum, readtime, videotime)
         except exceptions.TimeoutException:
             print("服务器登陆状态失效，请重新登陆")
@@ -106,6 +113,7 @@ def check():
 def get_list():
     if os.path.exists("./user/{}/log.txt".format(user_name)):
         print("历史学习记录读取成功")
+        print("后台学习即将开始...")
     else:
         with open("./user/{}/log.txt".format(user_name), "w", encoding="utf8")as fp:
             fp.write("0")
@@ -121,27 +129,42 @@ def get_list():
     return log, article, video
 
 
-def learn_article(readnum, readtime, log, article):
+def learn_article(cookies, readnum, readtime, log, article):
+    driver.quit()
+    options = Options()
+    options.binary_location = "./chrome/chrome.exe"
+    options.add_argument('blink-settings=imagesEnabled=false')  # 不加载图片, 提升速度
+    options.add_argument('--mute-audio')  # 关闭声音
+    options.add_argument('--window-size=400,500')
+    options.add_argument('--headless')
+    driver_article = webdriver.Chrome(executable_path="./chromedriver.exe", chrome_options=options)  # 实例化chrome
+
+    driver_article.get("https://pc.xuexi.cn/points/my-study.html")  # 读取上下文
+    driver_article.delete_all_cookies()  # 删除未登陆cookie
+    for cookie in cookies:  # 添加cookies
+        driver_article.add_cookie({k: cookie[k] for k in {'name', 'value', 'domain', 'path', 'expiry'}})
+
     links = []
     pattern = r"list\"\:(.+),\"count\"\:"
     list = re.search(pattern, article)
     for i in range(log, log + readnum):
         links.append(eval(list.group(1))[i]["static_page_url"])
     for i in range(readnum):
-        driver.get(links[i])
+        driver_article.get(links[i])
         for j in range(4 * 60):
-            driver.execute_script(
+            driver_article.execute_script(
                 'window.scrollTo(0, document.body.scrollHeight/240*{})'.format(j))
             print("\r正在多线程学习中，文章剩余{}秒".format(readtime - j), end="")
             time.sleep(1)
-        driver.execute_script('window.scrollTo(0, document.body.scrollHeight)')
+        driver_article.execute_script('window.scrollTo(0, document.body.scrollHeight)')
         readtime -= 4 * 60
-    driver.get(eval(list.group(1))[0]["static_page_url"])
+    driver_article.get(eval(list.group(1))[0]["static_page_url"])
     for i in range(readtime):
         time.sleep(1)
         print("\r正在多线程学习中，文章剩余{}秒".format(readtime - i), end="")
-        driver.execute_script('window.scrollTo(0, document.body.scrollHeight)')
+        driver_article.execute_script('window.scrollTo(0, document.body.scrollHeight)')
     print("文章学习完成")
+    return driver_article
 
 
 def learn_video(cookies, videonum, videotime, log, video):
@@ -149,8 +172,9 @@ def learn_video(cookies, videonum, videotime, log, video):
     options.binary_location = "./chrome/chrome.exe"
     options.add_argument('blink-settings=imagesEnabled=false')  # 不加载图片, 提升速度
     options.add_argument('--mute-audio')  # 关闭声音
+    options.add_argument('--window-size=400,500')
+    options.add_argument('--headless')
     driver_video = webdriver.Chrome(executable_path="./chromedriver.exe", chrome_options=options)  # 实例化chrome
-    driver_video.set_window_size(400, 500)
     driver_video.get("https://pc.xuexi.cn/points/my-study.html")  # 读取上下文
     driver_video.delete_all_cookies()  # 删除未登陆cookie
     for cookie in cookies:  # 添加cookies
@@ -158,7 +182,6 @@ def learn_video(cookies, videonum, videotime, log, video):
     pattern = r'https://www.xuexi.cn/[^,"]*html'
     link = re.findall(pattern, video, re.I)
     link.reverse()
-    print("\n")
     print("=" * 30)
     links = []
     for i in range(log, log + videonum):
@@ -182,26 +205,30 @@ def learn_video(cookies, videonum, videotime, log, video):
 
 
 def learn_main(cookies, readnum, videonum, readtime, videotime):
+    log, article, video = get_list()
+    logwrite = log + 6
+    with open("./user/{}/log.txt".format(user_name), "w", encoding="utf8")as fp:
+        json.dump(logwrite, fp)
     hour_now = datetime.now().hour
+    print(datetime.now())
     if hour_now in [6, 7, 8, 12, 13, 20, 21, 22]:
         print("现在为活跃时间，学习效率加倍")
         readnum //= 2
         videonum //= 2
         readtime //= 2
         videotime //= 2
-    log, article, video = get_list()
+    else:
+        print("非活跃时间")
     t2 = Thread(target=learn_video, args=(cookies, videonum, videotime * 60, log, video))
     t2.start()
-    learn_article(readnum, readtime * 60, log, article)
+    driver_article = learn_article(cookies, readnum, readtime * 60, log, article)
     t2.join()
     print("学习完毕")
-    log += 6
-    with open("./user/{}/log.txt".format(user_name), "w", encoding="utf8")as fp:
-        json.dump(log, fp)
-    driver.get("https://pc.xuexi.cn/points/my-points.html")
+
+    driver_article.get("https://pc.xuexi.cn/points/my-points.html")
     print("学习完毕，学习情况如下，30分钟后程序自动关闭")
-    readpoint()
-    driver.quit()
+    readpoint(driver_article)
+    driver_article.quit()
     time.sleep(60 * 30)
 
 
@@ -214,8 +241,9 @@ if __name__ == '__main__':
     options.binary_location = "./chrome/chrome.exe"
     options.add_argument('blink-settings=imagesEnabled=false')  # 不加载图片, 提升速度
     options.add_argument('--mute-audio')  # 关闭声音
+    options.add_argument('--window-size=400,500')
+    options.add_argument('--window-position=800,0')
     driver = webdriver.Chrome(executable_path="./chromedriver.exe", chrome_options=options)  # 实例化chrome
-    driver.set_window_size(400, 500)
     if os.path.exists("./user/{}".format(user_name)):
         pass
         if os.path.exists("./user/{}/cookies.txt".format(user_name)):
