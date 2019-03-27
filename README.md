@@ -18,7 +18,7 @@
 
 ## 程序特性
 
-**支持WIN7和WIN10，mac os ，linux，vps以及Raspberry Pi**
+**支持WIN7和WIN10，mac os ，linux，vps以及Raspberry Pi**  树莓派好像反馈不能运行，有树莓派的可以帮忙打包一下
 
 **支持多用户同时使用，**
 
