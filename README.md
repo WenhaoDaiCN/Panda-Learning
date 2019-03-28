@@ -123,7 +123,7 @@
 
 
 
-## [windows平台通用](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning-32.7z)
+## [windows平台通用V2.1](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning-32.7z)
 
 ------
 
