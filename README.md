@@ -10,11 +10,9 @@
 
 
 
-### 已修复不能使用的问题，正在逐步上传，下载链接有了表示可以用了
+## 已紧急修复不能使用的问题，windows已上传
 
-# 文档龟速更新中，源码以上传，请大家指正及贡献，同时也请遵守开源协议
-
-#### 2.0预览已知有些小问题，但不影响使用，包括但不限于视频学习显示复数等，我会根据你们iseeues提交的问题慢慢排查，也恳请有能力之士查看源码pull你们的改进方法，人人为我，我为人人。若2.0特殊原因无法正常使用可以继续使用1.8版本过度
+# 文档龟速更新中，源码以上传，请大家指正及贡献。
 
 
 
@@ -123,11 +121,13 @@
 
 ## **下载地址**
 
-## 即将上传。
+
+
+## [windows平台通用](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning-32.7z)
 
 ------
 
-
+mac稍后上传
 
 ## 
 
@@ -137,7 +137,7 @@
 
 
 
-## 
+linux稍后上传
 
 ###### [linux浏览器下载rpm（适用于 Fedora/openSUSE)](https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/google-chrome-stable_current_x86_64.rpm?raw=true)
 
