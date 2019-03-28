@@ -10,7 +10,7 @@
 
 
 
-### 强国更行了大更新，积分规则等变化，强国文章接口等都被修改了程序暂时无法使用，周末会修复，请耐心等待。
+### 已修复不能使用的问题，正在逐步上传，下载链接有了表示可以用了
 
 # 文档龟速更新中，源码以上传，请大家指正及贡献，同时也请遵守开源协议
 
@@ -123,15 +123,13 @@
 
 ## **下载地址**
 
-## [win64位(61.4M)](https://github.com/Alivon/Panda-Learning/raw/master/Panda_Learning_win64.7z)  
-
-## [win32位(58.5M)](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning-win32.7z)
+## 即将上传。
 
 ------
 
 
 
-## [macos版本(12.9M)](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning-mac.zip)
+## 
 
 ###### [macos浏览器](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/googlechrome.dmg)
 
@@ -139,7 +137,7 @@
 
 
 
-## [linux版本(11.3M)](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning.tar.gz) 
+## 
 
 ###### [linux浏览器下载rpm（适用于 Fedora/openSUSE)](https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/google-chrome-stable_current_x86_64.rpm?raw=true)
 
@@ -149,11 +147,11 @@
 
 #### windows旧版本
 
-###### [windows1.8旧版](https://github.com/Alivon/Panda-Learning/raw/master/pandalearning-window-1.8.7z)（同时支持win32和win64）
+###### [~~windows1.8旧版](https://github.com/Alivon/Panda-Learning/raw/master/pandalearning-window-1.8.7z)（同时支持win32和win64）~~
 
-###### [macos1.8旧版(12.9M)](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/pandalearning-mac.zip)
+###### ~~[macos1.8旧版(12.9M)](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/pandalearning-mac.zip)~~
 
-###### [linux1.6旧版(11.1M)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/pandalearning-linux.zip)
+###### ~~[linux1.6旧版(11.1M)~~](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/pandalearning-linux.zip)
 
 
 
