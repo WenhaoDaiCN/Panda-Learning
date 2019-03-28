@@ -8,68 +8,19 @@
 
 使用异常或者有更好的建议请联系邮箱 mypandalearning@gmail.com
 
-# 文档更新中，具体使用方法后续会放上来
 
 
+## 已紧急修复不能使用的问题，windows已上传
 
-## 更新说明
-### 更新记得同步你的user文件信息，不然会学习重复文章视频
-
-- v 2.0(preview) 
-  - 很多更新，慢慢写说明
-
--  v 1.8
-  - 增加账号登陆，可以卸载手机app了。
-  - 改为后台学习，登陆后自动关闭浏览器。
-  - 不保存用户信息，防止不法分子商用，需要用户每天登陆
--  v 1.6
-  - 修复win7 32位系统不能使用问题
-  - 增加mac os系统支持，请仔细阅读使用说明。
--  v 1.5
-  - 加入活跃时间判断，优化用户自行学完文章篇书却没有学习时长等极端情况。
-  - 开放python源码，可以自行在各平台使用，请勿商用，转发请注明出处
+# 文档龟速更新中，源码以上传，请大家指正及贡献。
 
 
 
 
-
-## **下载地址**
-
-## [win64位(61.4M)](https://github.com/Alivon/Panda-Learning/raw/master/Panda_Learning_win64.7z)  
-
-## [win32位(58.5M)](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning-win32.7z)
-
-------
-
-
-
-## [macos版本(12.9M)](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning-mac.zip)
-
-###### [macos浏览器](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/googlechrome.dmg)
-
-------
-
-
-
-## [linux版本(11.3M)](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning.tar.gz) 
-
-###### [linux浏览器下载rpm（适用于 Fedora/openSUSE)](https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/google-chrome-stable_current_x86_64.rpm?raw=true)
-
-###### [ linux浏览器下载deb（适用于 Debian/Ubuntu）](https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/google-chrome-stable_current_amd64.deb?raw=true)
-
-
-
-#### windows旧版本
-
-###### [windows1.8旧版](https://github.com/Alivon/Panda-Learning/raw/master/pandalearning-window-1.8.7z)（同时支持win32和win64）
-
-###### [macos1.8旧版(12.9M)](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/pandalearning-mac.zip)
-
-###### [linux1.6旧版(11.1M)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/pandalearning-linux.zip)
 
 ## 程序特性
 
-**支持WIN7和WIN10，mac os ，linux，vps以及Raspberry Pi**
+**支持WIN7和WIN10，mac os ，linux，vps以及Raspberry Pi**  树莓派好像反馈不能运行，有树莓派的可以帮忙打包一下
 
 **支持多用户同时使用，**
 
@@ -84,6 +35,30 @@
 
 
 ## 使用方法
+
+2.0 使用方法：首次登陆需要输入并保存用户标记(标记用于区分本地用户以及保存学习历史纪录)，然后根据需要选择扫描或者钉钉账号密码登陆，若保存了账户密码，以后每次只需输入用户标记即可自动学习。
+
+- 高级用法，终端运行` pandalearning ` 然后输入参数各参数用空格分开，
+
+  - 第一个参数为用户标记，
+
+  - 第二个参数为 ` hidden ` 或 ` show `，分别表示隐藏浏览器后台运行和前台显示运行
+
+  - 第三个参数为 ` single  ` 或 ` multithread `, 分别表示仅用单线程和多线程学习。
+
+  - 第四个参数为 ` num ` 为一个数字，表示学习完成后多少秒自动关机。  
+
+    win平台示例
+
+    ​	user1 为已经保存了顶顶账户的用户标记
+
+    ​	` ./pandalearning.exe user1 ` 表示自动开启user1 学习
+
+    ​	` ./pandalearning.exe user1 show single` 表示前台显示且单线程开启user1 学习
+
+    ​	` ./pandalearning.exe user1 hidden multithread 300` 表示后台多线程开启user1 学习，学习完毕300秒关机
+
+    其他平台同理，可以放在vps和树莓派了
 
 #### Windows
 
@@ -119,6 +94,71 @@
 
 
 
+周末会再跟新一下
+
+
+
+## 更新说明
+### 更新记得同步你的user文件信息，不然可能会学习重复文章视频
+
+- v 2.0(preview) 
+  - 很多更新，慢慢写说明
+
+-  v 1.8
+  - 增加账号登陆，可以卸载手机app了。
+  - 改为后台学习，登陆后自动关闭浏览器。
+  - 不保存用户信息，防止不法分子商用，需要用户每天登陆
+-  v 1.6
+  - 修复win7 32位系统不能使用问题
+  - 增加mac os系统支持，请仔细阅读使用说明。
+-  v 1.5
+  - 加入活跃时间判断，优化用户自行学完文章篇书却没有学习时长等极端情况。
+  - 开放python源码，可以自行在各平台使用，请勿商用，转发请注明出处
+
+
+
+
+
+## **下载地址**
+
+
+
+## [windows平台通用](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning-32.7z)
+
+------
+
+mac稍后上传
+
+## 
+
+###### [macos浏览器](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/googlechrome.dmg)
+
+------
+
+
+
+linux稍后上传
+
+###### [linux浏览器下载rpm（适用于 Fedora/openSUSE)](https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/google-chrome-stable_current_x86_64.rpm?raw=true)
+
+###### [ linux浏览器下载deb（适用于 Debian/Ubuntu）](https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/google-chrome-stable_current_amd64.deb?raw=true)
+
+
+
+#### windows旧版本
+
+###### [~~windows1.8旧版](https://github.com/Alivon/Panda-Learning/raw/master/pandalearning-window-1.8.7z)（同时支持win32和win64）~~
+
+###### ~~[macos1.8旧版(12.9M)](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/pandalearning-mac.zip)~~
+
+###### ~~[linux1.6旧版(11.1M)~~](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/pandalearning-linux.zip)
+
+
+
+
+
+
+
 
 ## win下报错解决办法
 
@@ -134,3 +174,6 @@ windous有可能提示`无法定位程序输入点ucrtbase.terminate于动态链
 
 
 
+源码
+
+[2.0源码](<https://github.com/Alivon/Panda-Learning/tree/master/Source%20Packages>)
