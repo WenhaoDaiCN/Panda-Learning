@@ -1,3 +1,5 @@
 Update log test
-version = v2.1 preview
-当前版本位preview预览版，不能保证程序鲁棒性，若发现程序逻辑问题以及有更好的建议请在项目github上提交issues。重要更新，因为强国修改积分规则和校验方式请至github请重新下载2.1版本，否则无法使用。
+version=v2.2 preview
+当前版本为preview预览版，请积极在项目github上提交issues。
+重要更新，因为强国修改积分规则请至github请重新下载2.1以上版本，否则无法使用。
+网页积分学习上线为25分，望周知。

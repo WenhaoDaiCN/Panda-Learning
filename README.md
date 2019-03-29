@@ -6,11 +6,11 @@
 
 觉得好用请点击右上star一下。
 
-使用异常或者有更好的建议请联系邮箱 mypandalearning@gmail.com
+使用异常或有问题请先在[issues](https://github.com/Alivon/Panda-Learning/issues) 搜索，若没有可提交新的[issues](https://github.com/Alivon/Panda-Learning/issues) 
 
+mypandalearning@gmail.com
 
-
-## 已紧急修复不能使用的问题，windows已上传
+## v2.2更新，各系统均已已上传
 
 # 文档龟速更新中，源码以上传，请大家指正及贡献。
 
@@ -64,9 +64,8 @@
 
 - 请解压后点击 `pandalearn`ing 来启动程序。
 - 开启后根据提示中输入用户名可以输入任何***`英文/中文/数字`***组成的用户名，作用是保存学习历史纪录以及多开程序区分用户，防止学习重复文章视频，
-- 第一次登陆需要扫描二维码登陆学习强国，再次使用6小时之内会免登陆。
 - 打开的chrome浏览器窗口中的程序自动完成“学习”，你可以用这台电脑做其他事情，但不能 最小化 或 关闭 学习窗口。
-- 第一次使用后程序会自动生成 `user`文件夹，里面包含你的学习历史纪录，当学习文章篇数和视频数出现不加分情况，多半是你变更了用户名，解决办法为进入`user`文件夹下你`用户名`文件夹下的`log.txt`文件，修改上面的数字，例如是0的时候可以改成20，12的时候改为30，就是根据上面的数字增加20~30，修改后仍为一个数样式如下`36`
+- 第一次使用后程序会自动生成 `user`文件夹，里面包含你的学习历史纪录，当学习文章篇数和视频数出现不加分情况，多半是你变更了用户名，解决办法为进入`user`文件夹下你`用户名`文件夹下的`a_log`和`v_log`文件，修改上面的数字，例如是0的时候可以改成20，12的时候改为30，就是根据上面的数字增加20~30，修改后仍为一个数样式如下`36`
 
 #### Mac
 
@@ -94,26 +93,22 @@
 
 
 
-周末会再跟新一下
-
-
-
 ## 更新说明
 ### 更新记得同步你的user文件信息，不然可能会学习重复文章视频
+- v 2.2(preview) 
+  - 修复逻辑问题，更加稳定好用。
 - v 2.1(preview) 
   - 针对学习强国更新，紧急修复不能使用问题
-  
 - v 2.0(preview) 
-  - 很多更新，慢慢写说明
-
--  v 1.8
+  - 学满30位置，增加自动关机，保存账号，支持开关多线程及headless
+- v 1.8
   - 增加账号登陆，可以卸载手机app了。
   - 改为后台学习，登陆后自动关闭浏览器。
   - 不保存用户信息，防止不法分子商用，需要用户每天登陆
--  v 1.6
+- v 1.6
   - 修复win7 32位系统不能使用问题
   - 增加mac os系统支持，请仔细阅读使用说明。
--  v 1.5
+- v 1.5
   - 加入活跃时间判断，优化用户自行学完文章篇书却没有学习时长等极端情况。
   - 开放python源码，可以自行在各平台使用，请勿商用，转发请注明出处
 
@@ -123,15 +118,15 @@
 
 ## **下载地址**
 
+### [Windows v2.2 完整包](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning-32.7z) 57.5MB首次使用推荐下载
+
+### [Windows v2.2 更新包](https://github.com/Alivon/Panda-Learning/raw/master/pandalearning.exe) 5.94MB下载覆盖即可使用
 
 
-## [windows平台通用V2.1](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning-32.7z)
 
 ------
 
-mac稍后上传
-
-## 
+### [Macos v2.2](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/pandalearning_macos.zip) 12.9MB
 
 ###### [macos浏览器](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/googlechrome.dmg)
 
@@ -139,7 +134,7 @@ mac稍后上传
 
 
 
-linux稍后上传
+### [linux v2.2](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/pandalearning_linux.tar.gz) 11.2MB
 
 ###### [linux浏览器下载rpm（适用于 Fedora/openSUSE)](https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/google-chrome-stable_current_x86_64.rpm?raw=true)
 
@@ -149,11 +144,7 @@ linux稍后上传
 
 #### windows旧版本
 
-###### [~~windows1.8旧版](https://github.com/Alivon/Panda-Learning/raw/master/pandalearning-window-1.8.7z)（同时支持win32和win64）~~
-
-###### ~~[macos1.8旧版(12.9M)](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/pandalearning-mac.zip)~~
-
-###### ~~[linux1.6旧版(11.1M)~~](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/pandalearning-linux.zip)
+###### 因为学习强国规则更新，已删除
 
 
 
@@ -178,4 +169,4 @@ windous有可能提示`无法定位程序输入点ucrtbase.terminate于动态链
 
 源码
 
-[2.0源码](<https://github.com/Alivon/Panda-Learning/tree/master/Source%20Packages>)
+[2.2源码](<https://github.com/Alivon/Panda-Learning/tree/master/Source%20Packages>)
