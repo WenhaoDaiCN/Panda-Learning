@@ -3,13 +3,15 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common import exceptions
 from selenium.webdriver.chrome.options import Options
+import os
 
 
 class Mydriver:
 
     def __init__(self, noimg=True, nohead=True):
         self.options = Options()
-        self.options.binary_location = "./chrome/chrome.exe"
+        if os.path.exists("./chrome/chrome.exe"):
+            self.options.binary_location = "./chrome/chrome.exe"
         if noimg:
             self.options.add_argument('blink-settings=imagesEnabled=false')  # 不加载图片, 提升速度
         if nohead:
@@ -19,7 +21,10 @@ class Mydriver:
         self.options.add_argument('--window-position=800,0')
         self.options.add_argument('--log-level=3')
         self.webdriver = webdriver
-        self.driver = self.webdriver.Chrome(executable_path="./chrome/chromedriver.exe", chrome_options=self.options)
+        if os.path.exists("./chrome/chromedriver.exe"):
+            self.driver = self.webdriver.Chrome(executable_path="./chrome/chromedriver.exe", chrome_options=self.options)
+        else:
+            self.driver = self.webdriver.Chrome(chrome_options=self.options)
 
     def login(self):
         print("正在打开二维码登陆界面,请稍后")
