@@ -125,7 +125,7 @@
 
 
 
-## [windows平台通用V2.1](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning-32.7z)
+## 上传中
 
 ------
 
@@ -149,11 +149,7 @@ linux稍后上传
 
 #### windows旧版本
 
-###### [~~windows1.8旧版](https://github.com/Alivon/Panda-Learning/raw/master/pandalearning-window-1.8.7z)（同时支持win32和win64）~~
-
-###### ~~[macos1.8旧版(12.9M)](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/pandalearning-mac.zip)~~
-
-###### ~~[linux1.6旧版(11.1M)~~](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/pandalearning-linux.zip)
+###### 因为学习强国规则更新，已删除
 
 
 
