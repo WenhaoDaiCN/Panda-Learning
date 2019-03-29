@@ -83,12 +83,13 @@ def article(cookies, a_log, each):
         while True:
             if each[3] < 6 and try_count < 10:
                 num_time = 60
-                driver_article.get_url(links[a_log])
+                driver_article.get_url(links[a_log-1])
                 time.sleep(random.randint(5, 15))
-                for i in range((6 - each[3]) * 4 * num_time):
+                remaining = (6 - each[3]) * 4 * num_time
+                for i in range(remaining):
                     driver_article.go_js(
                         'window.scrollTo(0, document.body.scrollHeight/{}*{})'.format((6 - each[3]) * 4 * num_time, i))
-                    print("\r文章学习中，文章总时长剩余{}秒".format((6 - each[3]) * 4 * num_time - i), end="")
+                    print("\r文章时长学习中，文章总时长剩余{}秒".format(remaining - i), end="")
                     time.sleep(1)
                     if i % (240) == 0 and i != (6 - each[3]) * 4 * num_time:
                         total, each = show_score(cookies)
@@ -127,7 +128,7 @@ def video(cookies, v_log, each):
                         time.sleep(1)
                     driver_video.go_js('window.scrollTo(0, document.body.scrollHeight)')
                     total, each = show_score(cookies)
-                    if each[0] >= 6:
+                    if each[1] >= 6:
                         print("检测到视频数量分数已满,退出学习")
                         break
                 v_log += v_num
@@ -139,12 +140,13 @@ def video(cookies, v_log, each):
         while True:
             if each[4] < 6 and try_count < 10:
                 num_time = 60
-                driver_video.get_url(links[v_log])
+                driver_video.get_url(links[v_log-1])
                 time.sleep(random.randint(5, 15))
-                for i in range((6 - each[4]) * 5 * num_time):
+                remaining = (6 - each[4]) * 5 * num_time
+                for i in range(remaining):
                     driver_video.go_js(
                         'window.scrollTo(0, document.body.scrollHeight/{}*{})'.format((6 - each[4]) * 5 * num_time, i))
-                    print("\r视频学习中，视频总时长剩余{}秒".format((6 - each[4]) * 5 * num_time - i), end="")
+                    print("\r视频学习中，视频总时长剩余{}秒".format(remaining - i), end="")
                     time.sleep(1)
                     if i % (300) == 0 and i != (6 - each[4]) * 5 * num_time:
                         total, each = show_score(cookies)
