@@ -123,9 +123,9 @@
 
 ## **下载地址**
 
-### [Windows v2.2 完整包](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning-32.7z) 首次使用推荐下载
+### [Windows v2.2 完整包](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning-32.7z) 57.5MB首次使用推荐下载
 
-### [Windows v2.2 更新包](https://github.com/Alivon/Panda-Learning/raw/master/pandalearning.exe) 下载覆盖即可使用
+### [Windows v2.2 更新包](https://github.com/Alivon/Panda-Learning/raw/master/pandalearning.exe) 5.94MB下载覆盖即可使用
 
 
 
@@ -175,4 +175,3 @@ windous有可能提示`无法定位程序输入点ucrtbase.terminate于动态链
 源码
 
 [2.0源码](<https://github.com/Alivon/Panda-Learning/tree/master/Source%20Packages>)
-
