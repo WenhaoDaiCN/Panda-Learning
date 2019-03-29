@@ -4,9 +4,7 @@
 
 熊猫学习Panda-Learning是一个辅助学习强国的程序,帮助挤不出时间，却仍然需要学习的积极分子，熊猫学习强国(xuexiqiangguo)
 
-觉得好用请点击右上star<button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star Alivon/Panda-Learning" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:175188649,&quot;client_id&quot;:&quot;935141887.1552396531&quot;,&quot;originating_request_id&quot;:&quot;19A0:3F5D:117F8F:188CF3:5C9E22A6&quot;,&quot;originating_url&quot;:&quot;https://github.com/Alivon/Panda-Learning/issues?_pjax=%23js-repo-pjax-container&quot;,&quot;referrer&quot;:&quot;https://github.com/Alivon/Panda-Learning&quot;,&quot;user_id&quot;:26101616}}" data-hydro-click-hmac="78ba249121ea14c11a34d244dc38a97d866f90e410197af5043b102304e36e98" data-ga-click="Repository, click star button, action:issues#index; text:Star">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>
-        Star
-</button>一下。
+觉得好用请点击右上star一下。
 
 使用异常或有问题请先在[issues](https://github.com/Alivon/Panda-Learning/issues) 搜索，若没有可提交新的[issues](https://github.com/Alivon/Panda-Learning/issues) 
 
