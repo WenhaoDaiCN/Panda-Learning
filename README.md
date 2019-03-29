@@ -123,15 +123,15 @@
 
 ## **下载地址**
 
+### [Windows v2.2 完整包](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning-32.7z) 首次使用推荐下载
+
+### [Windows v2.2 更新包](https://github.com/Alivon/Panda-Learning/raw/master/pandalearning.exe) 下载覆盖即可使用
 
 
-## 上传中
 
 ------
 
-mac稍后上传
-
-## 
+### [Macos v2.2](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/pandalearning_macos.zip) 12.9MB
 
 ###### [macos浏览器](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/googlechrome.dmg)
 
@@ -139,7 +139,7 @@ mac稍后上传
 
 
 
-linux稍后上传
+### [linux v2.2](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/pandalearning_linux.tar.gz) 11.2MB
 
 ###### [linux浏览器下载rpm（适用于 Fedora/openSUSE)](https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/google-chrome-stable_current_x86_64.rpm?raw=true)
 
@@ -175,3 +175,4 @@ windous有可能提示`无法定位程序输入点ucrtbase.terminate于动态链
 源码
 
 [2.0源码](<https://github.com/Alivon/Panda-Learning/tree/master/Source%20Packages>)
+
