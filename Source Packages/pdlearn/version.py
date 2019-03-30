@@ -3,7 +3,7 @@ import requests
 
 def up_info():
     print("\n正在联网获取跟新信息...")
-    __Version = "v2.2 preview"
+    __Version = "v2.3 preview"
     __INFO = "熊猫学习唯一下载地址为 https://github.com/Alivon/Panda-Learning"
     try:
         updata_log = requests.get(

@@ -52,12 +52,12 @@ def get_v_log(uname):
     return __v_log
 
 
-def shutdown(stime=False):
+def shutdown(stime):
     if stime:
-        int(stime)
+        stime = int(stime)
         os.system('shutdown -s -t {}'.format(stime))
-        for i in stime:
-            print("\r{}秒后关机".format(i), end="")
+        for i in range(stime):
+            print("\r{}秒后关机".format(stime-i), end="")
             sleep(1)
     else:
         sleep(1800)
