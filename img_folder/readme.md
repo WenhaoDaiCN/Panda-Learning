@@ -4,9 +4,13 @@
 
 # Panda Learning
 
-Panda Learning 是一款使用python语言编写的学习工具。当前版本为v2.3 preview
+Panda Learning 是一款使用python语言编写的学习工具。
 
 ![学习情景](https://github.com/Alivon/Panda-Learning/blob/master/img_folder/peoplelearning.jpg?raw=true)
+
+
+
+<github-fork *href* = “http://github.com/rcaferati/github-fork” > </ github-fork>
 
 ## Installation
 
@@ -36,4 +40,4 @@ Please make sure to update tests as appropriate.
 
 
 ## 许可证
-<a href="https://github.com/wzx140"><img src="https://github.com/Alivon/Panda-Learning/blob/master/img_folder/1920px-LGPLv3_Logo.svg.png?raw=true"></a>
+[![](https://github.com/Alivon/Panda-Learning/blob/master/img_folder/1920px-LGPLv3_Logo.svg.png?raw=true)](https://github.com/Alivon/Panda-Learning/blob/master/LICENSE)
