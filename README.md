@@ -10,9 +10,9 @@ Panda Learning 是一款使用python语言编写的学习工具。
 
 ![学习情景](https://github.com/Alivon/Panda-Learning/blob/master/img_folder/peoplelearning.jpg?raw=true)
 
-​                                                                   [![GitHub stars](https://img.shields.io/github/stars/Alivon/Panda-Learning.svg?style=social)](https://github.com/Alivon/Panda-Learning/stargazers)     [![GitHub forks](https://img.shields.io/github/forks/Alivon/Panda-Learning.svg?style=social)](https://github.com/Alivon/Panda-Learning/network/members)  
+ [![GitHub stars](https://img.shields.io/github/stars/Alivon/Panda-Learning.svg?style=social)](https://github.com/Alivon/Panda-Learning/stargazers)     [![GitHub forks](https://img.shields.io/github/forks/Alivon/Panda-Learning.svg?style=social)](https://github.com/Alivon/Panda-Learning/network/members)  `请点击页面顶部靠右star与fork`
 
-​									👆star                     👆fork
+
 
 
 
