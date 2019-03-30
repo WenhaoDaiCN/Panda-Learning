@@ -31,11 +31,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-<a  href="/Alivon"><img src="https://avatars3.githubusercontent.com/u/26101616?s=60&amp;v=4" class="avatar" alt="" width="38" height="38"></a>
-
-<a href="/wzx140"><img src="https://avatars0.githubusercontent.com/u/25837418?s=60&amp;v=4" class="avatar" alt="" width="38" height="38"></a>
+<a href="https://github.com/Alivon"><img src="https://avatars3.githubusercontent.com/u/26101616?s=60&amp;v=4" class="avatar" alt="" width="38" height="38"></a><a href="https://github.com/wzx140"><img src="https://avatars0.githubusercontent.com/u/25837418?s=60&amp;v=4" class="avatar" alt="" width="38" height="38"></a>
 
 
 
 ## 许可证
-[![许可证](https://github.com/Alivon/Panda-Learning/blob/master/img_folder/1920px-LGPLv3_Logo.svg.png?raw=true)][ Panda-Learning/LICENSE ]
+<a href="https://github.com/wzx140"><img src="https://github.com/Alivon/Panda-Learning/blob/master/img_folder/1920px-LGPLv3_Logo.svg.png?raw=true"></a>
