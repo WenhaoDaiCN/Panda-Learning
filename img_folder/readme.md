@@ -10,11 +10,9 @@ Panda Learning 是一款使用python语言编写的学习工具。
 
 
 
-```
 <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.3/webcomponents.min.js"></script>
 <link rel="import" href="/github-fork.html">
 <github-fork href="http://github.com/rcaferati/github-fork"></github-fork>
-```
 
 ## Installation
 
