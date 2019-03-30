@@ -22,6 +22,8 @@ Panda Learning 是一款使用python语言编写的学习工具。
 
 
 
+[TOC]
+
 
 
 ## 📃免责声明
@@ -78,7 +80,7 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 
 ## 📗使用方法
 
-##### 快速使用
+### 🔑快速使用
 
 ​	`解压后运行 pandalearning 来启动程序；`
 
@@ -88,7 +90,7 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 
 ​	`登陆之后自动学习`
 
-##### 进阶使用
+### 🔐进阶使用
 
 ​    快捷方式中或者终端运行时加入参数分别是：
 
@@ -100,7 +102,7 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 
 ​	`第四个参数为 num 为输入一个数字，表示学习完成后多少秒自动关机。`  
 
-##### example win平台
+### 📅example win平台
 
 ​    user1 为已经保存了钉钉账户的用户标记
 
@@ -110,7 +112,7 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 
 ​	`pandalearning.exe user1 hidden multithread 300 表示后台多线程开启user1 学习，学习完毕300秒关机`
 
-##### 更新方法
+### 🔧更新方法
 
 ​    下载更新包覆盖原文件，打开程序验证版本信息
 
@@ -183,9 +185,9 @@ win平台可能提示`无法定位程序输入点ucrtbase.terminate于动态链�
 
 
 
-###### 关于贡献开源的常见误解是您需要贡献代码。事实上，项目的其他部分通常是[最容易被忽视或忽视的部分](https://github.com/blog/2195-the-shape-of-open-source)。您可以通过提供这些类型的贡献来为该项目提供*巨大*帮助！
+关于贡献开源的常见误解是您需要贡献代码。事实上，项目的其他部分通常是[最容易被忽视或忽视的部分](https://github.com/blog/2195-the-shape-of-open-source)。您可以通过提供这些类型的贡献来为该项目提供*巨大*帮助！
 
-#### [参与贡献](https://github.com/Alivon/Panda-Learning/blob/master/CONTRIBUTING.md)
+### [👨‍👨‍👦‍👦  参与贡献](https://github.com/Alivon/Panda-Learning/blob/master/CONTRIBUTING.md)
 
 
 
