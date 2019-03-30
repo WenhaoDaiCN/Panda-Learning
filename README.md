@@ -12,7 +12,7 @@ Panda Learning 是一款使用python语言编写的学习工具。
 
 ​                                                                   [![GitHub stars](https://img.shields.io/github/stars/Alivon/Panda-Learning.svg?style=social)](https://github.com/Alivon/Panda-Learning/stargazers)     [![GitHub forks](https://img.shields.io/github/forks/Alivon/Panda-Learning.svg?style=social)](https://github.com/Alivon/Panda-Learning/network/members)  
 
-​									👆star                 👆fork
+​									👆star                     👆fork
 
 
 
@@ -56,15 +56,15 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 
 [![](https://img.shields.io/badge/download-osx%20程序包-green.svg?style=for-the-badge&logo=apple)](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/pandalearning_macos.zip) ![](https://img.shields.io/badge/size-12.9%20mb-9cf.svg?style=social)   需预先安装Chrome浏览器
 
-[![](https://img.shields.io/badge/download-osx%20浏览器-green.svg?style=for-the-badge&logo=google chrome)](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/googlechrome.dmg) ![](https://img.shields.io/badge/size-74.3%20mb-9cf.svg?style=social)   Google Chrome镜像
+[![](https://img.shields.io/badge/download-osx%20浏览器-green.svg?style=for-the-badge&logo=google-chrome)](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/googlechrome.dmg) ![](https://img.shields.io/badge/size-74.3%20mb-9cf.svg?style=social)   Google Chrome镜像
 
 ------
 
 [![](https://img.shields.io/badge/download-linux%20程序-orange.svg?style=for-the-badge&logo=linux)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/pandalearning_linux.tar.gz) ![](https://img.shields.io/badge/size-11.2%20mb-9cf.svg?style=social)   需预先安装Chrome浏览器
 
-[![](https://img.shields.io/badge/download-rpm%20浏览器-orange.svg?style=for-the-badge&logo=google chrome)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/google-chrome-stable_current_x86_64.rpm) ![](https://img.shields.io/badge/size-55.1%20mb-9cf.svg?style=social)   适用于 Fedora/openSUSE
+[![](https://img.shields.io/badge/download-rpm%20浏览器-orange.svg?style=for-the-badge&logo=google-chrome)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/google-chrome-stable_current_x86_64.rpm) ![](https://img.shields.io/badge/size-55.1%20mb-9cf.svg?style=social)   适用于 Fedora/openSUSE
 
-[![](https://img.shields.io/badge/download-deb%20浏览器-orange.svg?style=for-the-badge&logo=google chrome)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/google-chrome-stable_current_amd64.deb)  ![](https://img.shields.io/badge/size-55.0%20mb-9cf.svg?style=social)   适用于 Debian/Ubuntu
+[![](https://img.shields.io/badge/download-deb%20浏览器-orange.svg?style=for-the-badge&logo=google-chrome)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/google-chrome-stable_current_amd64.deb)  ![](https://img.shields.io/badge/size-55.0%20mb-9cf.svg?style=social)   适用于 Debian/Ubuntu
 
 
 
