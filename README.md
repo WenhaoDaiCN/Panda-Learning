@@ -22,9 +22,13 @@ Panda Learning 是一款使用python语言编写的学习工具。
 
 
 
+
+
 ## 📃免责声明
 
 Panda Learning为本人python学习交流的开源非营利项目，仅作为程序员之间相互学习交流之用，使用需严格遵守开源许可协议。严禁用于商业用途，禁止使用Panda Learning进行任何盈利活动。对一切非法使用所产生的后果，本人概不负责。
+
+
 
 
 
@@ -43,6 +47,8 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 支持多线程学习(可选)
 
 学习完毕后自动关机(可选)
+
+
 
 
 
@@ -65,6 +71,8 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 [![](https://img.shields.io/badge/download-rpm%20浏览器-orange.svg?style=for-the-badge&logo=google-chrome)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/google-chrome-stable_current_x86_64.rpm) ![](https://img.shields.io/badge/size-55.1%20mb-9cf.svg?style=social)   适用于 Fedora/openSUSE
 
 [![](https://img.shields.io/badge/download-deb%20浏览器-orange.svg?style=for-the-badge&logo=google-chrome)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/google-chrome-stable_current_amd64.deb)  ![](https://img.shields.io/badge/size-55.0%20mb-9cf.svg?style=social)   适用于 Debian/Ubuntu
+
+
 
 
 
@@ -108,6 +116,8 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 
 
 
+
+
 ## 📑常见问题
 
 win平台可能提示`无法定位程序输入点ucrtbase.terminate于动态链接库api-ms-win-crt-runtime-|1-1-0.dll`等缺失dll文件的问题而无法使用，尝试安装`Visual C++ Redistributable for Visual Studio 2015`
@@ -115,6 +125,8 @@ win平台可能提示`无法定位程序输入点ucrtbase.terminate于动态链�
 [![](https://img.shields.io/badge/download-vc_redist.x64-blue.svg?style=for-the-badge&logo=visualstudiocode)](https://github.com/Alivon/Panda-Learning/raw/master/windows%E4%B8%8D%E8%83%BD%E8%BF%90%E8%A1%8C%E6%97%B6%E5%AE%89%E8%A3%85/vc_redist.x64.exe) 
 
 [![](https://img.shields.io/badge/download-vc_redist.x86-blue.svg?style=for-the-badge&logo=visualstudiocode)](https://github.com/Alivon/Panda-Learning/raw/master/windows%E4%B8%8D%E8%83%BD%E8%BF%90%E8%A1%8C%E6%97%B6%E5%AE%89%E8%A3%85/vc_redist.x86.exe) 
+
+
 
 
 
@@ -131,6 +143,8 @@ win平台可能提示`无法定位程序输入点ucrtbase.terminate于动态链�
 [![GitHub issues](https://img.shields.io/github/issues/Alivon/Panda-Learning.svg)](https://github.com/Alivon/Panda-Learning/issues)  [![GitHub closed issues](https://img.shields.io/github/issues-closed/Alivon/Panda-Learning.svg)](https://github.com/Alivon/Panda-Learning/issues?q=is%3Aissue+is%3Aclosed) 
 
 提交issue标题示例  `V2.3 win10x64 软件显示问题…`
+
+
 
 
 
@@ -159,6 +173,8 @@ win平台可能提示`无法定位程序输入点ucrtbase.terminate于动态链�
 
 
 
+
+
 ## 📈贡献
 
 ![GitHub contributors](https://img.shields.io/github/contributors/Alivon/Panda-Learning.svg) 
@@ -173,6 +189,8 @@ win平台可能提示`无法定位程序输入点ucrtbase.terminate于动态链�
 
 
 
+
+
 ## 📌关于学习强国
 
 个人认为，学习强国本身受众就是国家的栋梁，本人不欢迎不热爱国家的人加入本项目。
@@ -183,9 +201,13 @@ win平台可能提示`无法定位程序输入点ucrtbase.terminate于动态链�
 
 
 
+
+
 ## 📝源码
 
 [![](https://img.shields.io/badge/source-pandalearning-orange.svg?style=for-the-badge&logo=visualstudiocode)](https://github.com/Alivon/Panda-Learning/tree/master/Source%20Packages) 
+
+
 
 
 
