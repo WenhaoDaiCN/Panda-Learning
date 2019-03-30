@@ -31,9 +31,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-<a data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=26101616" href="/Alivon" class="d-inline-block mr-2 float-left"><img src="https://avatars3.githubusercontent.com/u/26101616?s=60&amp;v=4" class="avatar" alt="" width="38" height="38"></a>
+<a  href="/Alivon"><img src="https://avatars3.githubusercontent.com/u/26101616?s=60&amp;v=4" class="avatar" alt="" width="38" height="38"></a>
 
-<a data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=25837418" href="/wzx140" class="d-inline-block mr-2 float-left"><img src="https://avatars0.githubusercontent.com/u/25837418?s=60&amp;v=4" class="avatar" alt="" width="38" height="38"></a>
+<a href="/wzx140"><img src="https://avatars0.githubusercontent.com/u/25837418?s=60&amp;v=4" class="avatar" alt="" width="38" height="38"></a>
 
 
 
