@@ -129,7 +129,7 @@ mypandalearning@gmail.com
 
 ------
 
-### [Macos v2.2](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/pandalearning_macos.zip) 12.9 MB
+### [Macos v2.3](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/pandalearning_macos.zip) 12.9 MB
 
 ###### [macos浏览器](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/googlechrome.dmg)
 
@@ -137,7 +137,7 @@ mypandalearning@gmail.com
 
 
 
-### [linux v2.2](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/pandalearning_linux.tar.gz) 11.2 MB
+### [linux v2.3](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/pandalearning_linux.tar.gz) 11.2 MB
 
 ###### [linux浏览器下载rpm（适用于 Fedora/openSUSE)](https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/google-chrome-stable_current_x86_64.rpm?raw=true)
 
