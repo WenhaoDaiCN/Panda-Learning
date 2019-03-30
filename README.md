@@ -10,7 +10,7 @@
 
 mypandalearning@gmail.com
 
-## v2.2更新，各系统均已已上传
+## v2.3更新，各系统均已已上传
 
 # 文档龟速更新中，源码以上传，请大家指正及贡献。
 
@@ -95,6 +95,9 @@ mypandalearning@gmail.com
 
 ## 更新说明
 ### 更新记得同步你的user文件信息，不然可能会学习重复文章视频
+- v 2.3(preview) 
+  - 修复自动关机问题，以及剩余时间显示不正确，根据强国规则调整学习时间。
+  - 文章2分钟，视频3分钟
 - v 2.2(preview) 
   - 修复逻辑问题，更加稳定好用。
 - v 2.1(preview) 
@@ -118,9 +121,9 @@ mypandalearning@gmail.com
 
 ## **下载地址**
 
-### [Windows v2.2 完整包](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning-32.7z) 73.4 MB首次使用推荐下载
+### [Windows v2.3 完整包](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning-32.7z) 58.4 MB首次使用推荐下载
 
-### [Windows v2.2 更新包](https://github.com/Alivon/Panda-Learning/raw/master/pandalearning.exe) 6.91 MB下载覆盖即可使用
+### [Windows v2.3 更新包](https://github.com/Alivon/Panda-Learning/raw/master/pandalearning.exe) 6.91 MB下载覆盖即可使用
 
 
 
@@ -169,4 +172,4 @@ windous有可能提示`无法定位程序输入点ucrtbase.terminate于动态链
 
 源码
 
-[2.2源码](<https://github.com/Alivon/Panda-Learning/tree/master/Source%20Packages>)
+[2.3源码](<https://github.com/Alivon/Panda-Learning/tree/master/Source%20Packages>)
