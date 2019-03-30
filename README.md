@@ -21,8 +21,8 @@ Panda Learning 是一款使用python语言编写的学习工具。
 [![GitHub release](https://img.shields.io/github/release/Alivon/Panda-Learning.svg?label=%E7%89%88%E6%9C%AC)](https://github.com/Alivon/Panda-Learning/releases/tag/V2.2)   ![GitHub top language](https://img.shields.io/github/languages/top/Alivon/Panda-Learning.svg)  ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Alivon/Panda-Learning.svg)  ![GitHub repo size](https://img.shields.io/github/repo-size/Alivon/Panda-Learning.svg) ![GitHub](https://img.shields.io/github/license/Alivon/Panda-Learning.svg) ![platforms](https://img.shields.io/badge/platform-win32%20%7C%20win64%20%7C%20linux%20%7C%20osx-brightgreen.svg)     [![GitHub issues](https://img.shields.io/github/issues/Alivon/Panda-Learning.svg)](https://github.com/Alivon/Panda-Learning/issues)  [![GitHub closed issues](https://img.shields.io/github/issues-closed/Alivon/Panda-Learning.svg)](https://github.com/Alivon/Panda-Learning/issues?q=is%3Aissue+is%3Aclosed) ![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/Alivon/Panda-Learning.svg)   ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Alivon/Panda-Learning.svg)  ![GitHub contributors](https://img.shields.io/github/contributors/Alivon/Panda-Learning.svg)
 
 
-
 [TOC]
+
 
 
 
