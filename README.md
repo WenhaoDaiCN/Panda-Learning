@@ -54,30 +54,6 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 
 
 
-## 💾下载地址
-
-[![](https://img.shields.io/badge/download-win%20完整版-blue.svg?style=for-the-badge&logo=windows)](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning-32.7z) ![](https://img.shields.io/badge/size-58.4%20mb-9cf.svg?style=social)  首次使用推荐下载
-
-[![](https://img.shields.io/badge/download-win%20更新包-blue.svg?style=for-the-badge&logo=windows)](https://github.com/Alivon/Panda-Learning/raw/master/pandalearning.exe) ![](https://img.shields.io/badge/size-6.91%20mb-9cf.svg?style=social)  下载覆盖即可使用
-
-------
-
-[![](https://img.shields.io/badge/download-osx%20程序包-green.svg?style=for-the-badge&logo=apple)](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/pandalearning_macos.zip) ![](https://img.shields.io/badge/size-12.9%20mb-9cf.svg?style=social)   需预先安装Chrome浏览器
-
-[![](https://img.shields.io/badge/download-osx%20浏览器-green.svg?style=for-the-badge&logo=google-chrome)](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/googlechrome.dmg) ![](https://img.shields.io/badge/size-74.3%20mb-9cf.svg?style=social)   Google Chrome镜像
-
-------
-
-[![](https://img.shields.io/badge/download-linux%20程序-orange.svg?style=for-the-badge&logo=linux)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/pandalearning_linux.tar.gz) ![](https://img.shields.io/badge/size-11.2%20mb-9cf.svg?style=social)   需预先安装Chrome浏览器
-
-[![](https://img.shields.io/badge/download-rpm%20浏览器-orange.svg?style=for-the-badge&logo=google-chrome)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/google-chrome-stable_current_x86_64.rpm) ![](https://img.shields.io/badge/size-55.1%20mb-9cf.svg?style=social)   适用于 Fedora/openSUSE
-
-[![](https://img.shields.io/badge/download-deb%20浏览器-orange.svg?style=for-the-badge&logo=google-chrome)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/google-chrome-stable_current_amd64.deb)  ![](https://img.shields.io/badge/size-55.0%20mb-9cf.svg?style=social)   适用于 Debian/Ubuntu
-
-
-
-
-
 ## 📗使用方法
 
 ### 🔑快速使用
@@ -119,6 +95,36 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 ​    下载更新包覆盖原文件，打开程序验证版本信息
 
 
+
+
+
+
+
+## 💾下载地址
+
+[![](https://img.shields.io/badge/download-win%20完整版-blue.svg?style=for-the-badge&logo=windows)](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning-32.7z) ![](https://img.shields.io/badge/size-58.4%20mb-9cf.svg?style=social)  首次使用推荐下载
+
+[![](https://img.shields.io/badge/download-win%20更新包-blue.svg?style=for-the-badge&logo=windows)](https://github.com/Alivon/Panda-Learning/raw/master/pandalearning.exe) ![](https://img.shields.io/badge/size-6.91%20mb-9cf.svg?style=social)  下载覆盖即可使用
+
+------
+
+[![](https://img.shields.io/badge/download-osx%20程序包-green.svg?style=for-the-badge&logo=apple)](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/pandalearning_macos.zip) ![](https://img.shields.io/badge/size-12.9%20mb-9cf.svg?style=social)   需预先安装Chrome浏览器
+
+[![](https://img.shields.io/badge/download-osx%20浏览器-green.svg?style=for-the-badge&logo=google-chrome)](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/googlechrome.dmg) ![](https://img.shields.io/badge/size-74.3%20mb-9cf.svg?style=social)   Google Chrome镜像
+
+------
+
+[![](https://img.shields.io/badge/download-linux%20程序-orange.svg?style=for-the-badge&logo=linux)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/pandalearning_linux.tar.gz) ![](https://img.shields.io/badge/size-11.2%20mb-9cf.svg?style=social)   需预先安装Chrome浏览器
+
+[![](https://img.shields.io/badge/download-rpm%20浏览器-orange.svg?style=for-the-badge&logo=google-chrome)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/google-chrome-stable_current_x86_64.rpm) ![](https://img.shields.io/badge/size-55.1%20mb-9cf.svg?style=social)   适用于 Fedora/openSUSE
+
+[![](https://img.shields.io/badge/download-deb%20浏览器-orange.svg?style=for-the-badge&logo=google-chrome)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/google-chrome-stable_current_amd64.deb)  ![](https://img.shields.io/badge/size-55.0%20mb-9cf.svg?style=social)   适用于 Debian/Ubuntu
+
+------
+
+[![](https://img.shields.io/badge/download-树莓派%20版本-ff69b4.svg?style=for-the-badge&logo=raspberry-pi)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/google-chrome-stable_current_amd64.deb)  ![](https://img.shields.io/badge/size-6.25%20mb-9cf.svg?style=social)   适用于 raspberrypi
+
+[Raspberry Pi 说明](https://github.com/Alivon/Panda-Learning/blob/master/%E6%A0%91%E8%8E%93%E6%B4%BE%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.txt)
 
 
 
@@ -184,6 +190,8 @@ win平台可能提示`无法定位程序输入点ucrtbase.terminate于动态链�
 ![GitHub contributors](https://img.shields.io/github/contributors/Alivon/Panda-Learning.svg) 
 
 <a href="https://github.com/Alivon"><img src="https://avatars3.githubusercontent.com/u/26101616?s=60&amp;v=4" class="avatar" alt="" width="38" height="38"></a><a href="https://github.com/wzx140"><img src="https://avatars0.githubusercontent.com/u/25837418?s=60&amp;v=4" class="avatar" alt="" width="38" height="38"></a>
+
+<a href="https://github.com/Alivon/Panda-Learning/graphs/contributors">[Contribution guidelines for this project](docs/CONTRIBUTING.md)</a>
 
 
 

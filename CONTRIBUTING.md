@@ -1,27 +1,109 @@
 
 
-### 如何Pull请求
+# 第一次参与开源
 
-如果你自己有能力修复bug或者添加新特性——那就太妙了。对代码基做一个pull请求！请确保你已经读过参与相关的文档了，了解许可证并拥有一个签名的CLA（如果需要的话）。一旦你提交了一个pull请求，项目的维护人员可以比较你的分支和当前分支来决定是否合并（pull in）你的变更.
+万事起头难。特别是和其他人合作时，犯错格外令人不舒服。不过，开源的本质就是和其他人合作。我们希望为初学者带来一个简单的方法去学习及参与开源项目。
 
-#### Pull请求专业建议
+阅读文章和观看教程会有所帮助。不过，有什么方法能比实际动手做更好？本项目旨在指导初学者及简化初学者参与开源的方式。记住：过程越轻松，学习效益越高。如果你想要做出第一次贡献，只需按照以下简单步骤操作即可。我们答应你，这将很好玩 :)
 
-- `Fork``仓库并克隆到本地。``通过连接你本地到初始的“上游”仓库并标记作为一个远程连接。时常从“`上游`”Pull in变更保证在提交你的pull请求时是最新版本，从而减少合并冲突的可能性。详细的指导见`[这里](https://help.github.com/articles/syncing-a-fork)`。`
-- 为你的编辑创建一个[分支](http://guides.github.com/overviews/flow/)。
-- `清楚问题``是如何发生的，同时其他人如何去复现问题，或者你提交的特性是有帮助的。同样的，清楚了解你的变更执行步骤。`
-- `最好进行测试``。如果有，对已有的测试项目测试你的变更，需要时创建一个新的测试。不管测试是否存在，请保证你的变更不会扰乱现有项目。`
-- `提供你变更前后的截图，``包括在html/css上的不同，拖拽图片到你的pull请求中。`
-- `尽量参照项目风格来参与项目``。这包括使用缩进，符号和注释，也许在你的项目中使用有所不同，不过使用（和项目一致的风格）会让项目维护人员更容易合并，其他人也更容易理解和在将来进行维护。`
+<img align="right" width="300" src="../assets/fork.png" alt="fork this repository" />
 
- 
+如果你的电脑上尚未安装 git, 请按照这个[ 安装指引 ](https://help.github.com/articles/set-up-git/)进行安装。
 
-### 打开pull请求
+## Fork（复制）本代码仓库
 
-一旦你打开了一个pull请求，一个你提交变更相关的讨论就会开始。其他参与者和用户会参与进来。但是最终还是由维护者进行决策。你可能会被要求对你的pull请求进行修改，如果是这样，为你的分支添加更多的注释并push它们——它们会自动加入已经存在的pull请求。
+点击图示中的按钮去 Fork 这个代码仓库。
+这个操作会将代码仓库复制到你的账户名下。
 
-![img](https://github.com/Alivon/Panda-Learning/blob/master/img_folder/CONTRIBUTING.jpg?raw=true)
+## Clone（克隆）代码仓库
 
-如果你的pull请求被合并了——非常棒！如果没有，也没问题，可能项目的维护者并没有注意到，或者他们已经为此做了一些事情。这时，我们建议你接受你收到的反馈并继续处理，再次提交pull请求——或者创建你自己的开源项目。
+<img align="right" width="300" src="../assets/clone.png" alt="clone this repository" />
+
+接下来，将复制后的代码仓库克隆到你的电脑上。点击图示中的绿色按钮，接着点击复制到剪切板按钮（将代码仓库地址复制下来）
+
+随后打开命令行窗口，敲入如下 git 命令：
+
+```
+git clone "刚才复制的 url 链接"
+```
+
+"刚才复制的 url 链接"（去掉双引号）就是复制到你账户名下的代码仓库地址。获取这链接地址的方法请见上一步。
+
+<img align="right" width="300" src="../assets/copy-to-clipboard.png" alt="copy URL to clipboard" />
+
+譬如：
+
+```
+git clone https://github.com/你的Github用户名/first-contributions.git
+```
+
+'你的 Github 用户名' 指的就是你的 Github 用户名。这一步，你将复制到你账户名下的 first-contributions 这个代码仓库克隆到本地电脑上。
+
+## 新建一个分支
+
+下面的命令能在命令行窗口中，把目录切换到 first-contributions
+
+```
+cd first-contributions
+```
+
+接下来使用 `git checkout` 命令新建一个代码分支
+
+```
+git checkout -b <新分支的名称>
+```
+
+譬如：
+
+```
+git checkout -b add-myname
+```
+
+(新分支的名称不一定需要有* add *。然而，在新分支的名称加入* add *是一件合理的事情，因为这个分支的目的是将你的名字添加到列表中。)
+
+## 对代码进行修改，而後 Commit (提交) 修改
+
+打开 `Contributors.md` 这个文件，更新文件内容，将你的名字加上去，保存修改。`git status` 这命令会列出被改动的文件。接着 `git add` 这命令则可以添加你的改动，就像如下这条命令。
+
+<img align="right" width="450" src="../assets/git-status.png" alt="git status" />
+
+```
+git add Contributors.md
+```
+
+现在就可以使用 `git commit` 命令 commit 你的修改了。
+
+```
+git commit -m "Add <你的名字> to Contributors list"
+```
+
+将 `<你的名字>` 替换为你的名字
+
+## 将改动 Push（发布）到 GitHub
+
+使用 `git push` 命令发布代码
+
+```
+git push origin <分支的名称>
+```
+
+将 `<分支的名称>` 替换为之前新建的分支名称。
+
+## 提出 Pull Request 将你的修改供他人审阅
+
+前往 Github 你的代码仓库，你会看到一个 `Compare & pull request` 的按钮。点击该按钮。
+
+<img style="float: right;" src="../assets/compare-and-pull.png" alt="create a pull request" />
+
+接着再点击 `Create pull request` 按钮，正式提交 pull request。
+
+<img style="float: right;" src="../assets/submit-pull-request.png" alt="submit pull request" />
+
+不久之后，我便会把你所有的变化合并到这个项目的主分支。更改合并后，你会收到电子邮件通知。
+
+### [ 更多资料 ](../additional-material/git_workflow_scenarios/additional-material.md)
+
+
 
 
 
