@@ -193,10 +193,6 @@ win平台可能提示`无法定位程序输入点ucrtbase.terminate于动态链�
 
 
 
-<a href="https://github.com/Alivon/Panda-Learning/graphs/contributors">[Contribution guidelines for this project](docs/CONTRIBUTING.md)</a>
-
-
-
 ### [👨‍👨‍👦‍👦   参与贡献](https://github.com/Alivon/Panda-Learning/blob/master/CONTRIBUTING.md)(内附提交方法)
 
 
