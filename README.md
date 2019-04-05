@@ -189,17 +189,15 @@ win平台可能提示`无法定位程序输入点ucrtbase.terminate于动态链�
 
 ![GitHub contributors](https://img.shields.io/github/contributors/Alivon/Panda-Learning.svg) 
 
-<a href="https://github.com/Alivon"><img src="https://avatars3.githubusercontent.com/u/26101616?s=60&amp;v=4" class="avatar" alt="" width="38" height="38"></a><a href="https://github.com/wzx140"><img src="https://avatars0.githubusercontent.com/u/25837418?s=60&amp;v=4" class="avatar" alt="" width="38" height="38"></a>
+[![contributors](img_folder/contributors.png)](https://github.com/Alivon/Panda-Learning/graphs/contributors)
+
+
 
 <a href="https://github.com/Alivon/Panda-Learning/graphs/contributors">[Contribution guidelines for this project](docs/CONTRIBUTING.md)</a>
 
 
 
-关于贡献开源的常见误解是您需要贡献代码。事实上，项目的其他部分通常是[最容易被忽视或忽视的部分](https://github.com/blog/2195-the-shape-of-open-source)。您可以通过提供这些类型的贡献来为该项目提供*巨大*帮助！
-
-### [👨‍👨‍👦‍👦  参与贡献](https://github.com/Alivon/Panda-Learning/blob/master/CONTRIBUTING.md)
-
-
+### [👨‍👨‍👦‍👦   参与贡献](https://github.com/Alivon/Panda-Learning/blob/master/CONTRIBUTING.md)(内附提交方法)
 
 
 
