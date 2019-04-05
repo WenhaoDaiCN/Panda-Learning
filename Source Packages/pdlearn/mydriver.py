@@ -16,6 +16,9 @@ class Mydriver:
             self.options.add_argument('blink-settings=imagesEnabled=false')  # 不加载图片, 提升速度
         if nohead:
             self.options.add_argument('--headless')
+            self.options.add_argument('--disable-extensions')
+            self.options.add_argument('--disable-gpu')
+            self.options.add_argument('--no-sandbox')
         self.options.add_argument('--mute-audio')  # 关闭声音
         self.options.add_argument('--window-size=400,500')
         self.options.add_argument('--window-position=800,0')
