@@ -10,8 +10,8 @@ class Mydriver:
 
     def __init__(self, noimg=True, nohead=True):
         self.options = Options()
-        if os.path.exists("./chrome/chrome.exe"):
-            self.options.binary_location = "./chrome/chrome.exe"
+        if os.path.exists("/opt/google/chrome/chrome"):
+            self.options.binary_location = "/opt/google/chrome/chrome"
         if noimg:
             self.options.add_argument('blink-settings=imagesEnabled=false')  # 不加载图片, 提升速度
         if nohead:
@@ -24,8 +24,8 @@ class Mydriver:
         self.options.add_argument('--window-position=800,0')
         self.options.add_argument('--log-level=3')
         self.webdriver = webdriver
-        if os.path.exists("./chrome/chromedriver.exe"):
-            self.driver = self.webdriver.Chrome(executable_path="./chrome/chromedriver.exe", chrome_options=self.options)
+        if os.path.exists("/usr/lib64/chromium-browser/chromedriver"):
+            self.driver = self.webdriver.Chrome(executable_path="/usr/lib64/chromium-browser/chromedriver", chrome_options=self.options)
         else:
             self.driver = self.webdriver.Chrome(chrome_options=self.options)
 
