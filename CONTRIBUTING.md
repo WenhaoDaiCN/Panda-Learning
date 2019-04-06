@@ -141,3 +141,5 @@ git push origin <分支的名称>
 - 查看其他人提交的代码
 - 编写有关如何使用项目的教程
 - 提供指导另一个贡献者，
+
+### 加我一个AthenaCN(https://github.com/AthenaCN)
