@@ -121,8 +121,18 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 Fedora/openSUSE快速安装Chrome和Chromedriver
 
  `# cp google-chrome.repo /etc/yum.repos.d/`
+
  `# dnf install google-chrome-stable`
+
  `# dnf install chromedriver`
+
+需要安装Python的WebDriver组件
+
+ `# pip3.7 install selenium`
+
+之后可直接运行源码
+
+ `# python3.7 pandalearning.py`
 
 [![](https://img.shields.io/badge/download-deb%20浏览器-orange.svg?style=for-the-badge&logo=google-chrome)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/google-chrome-stable_current_amd64.deb)  ![](https://img.shields.io/badge/size-55.0%20mb-9cf.svg?style=social)   适用于 Debian/Ubuntu
 
