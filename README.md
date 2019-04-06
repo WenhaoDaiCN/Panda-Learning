@@ -118,6 +118,10 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 
 [![](https://img.shields.io/badge/download-rpm%20浏览器-orange.svg?style=for-the-badge&logo=google-chrome)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/google-chrome-stable_current_x86_64.rpm) ![](https://img.shields.io/badge/size-55.1%20mb-9cf.svg?style=social)   适用于 Fedora/openSUSE
 
+# cp google-chrome.repo /etc/yum.repos.d/
+# dnf install google-chrome-stable
+# dnf install chromedrive
+
 [![](https://img.shields.io/badge/download-deb%20浏览器-orange.svg?style=for-the-badge&logo=google-chrome)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/google-chrome-stable_current_amd64.deb)  ![](https://img.shields.io/badge/size-55.0%20mb-9cf.svg?style=social)   适用于 Debian/Ubuntu
 
 ------
