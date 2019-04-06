@@ -126,7 +126,19 @@ Fedora/openSUSE快速安装Chrome和Chromedriver
 
  `# dnf install chromedriver`
 
-需要安装Python的WebDriver组件
+此方法既快速又可避免缺少依赖造成的安装失败
+
+注意：chromium ≠ chrome
+试图安装使用chromium替代chrome的同学 可能会无法学习
+
+Fedora默认将chrome安装在
+/opt/google/chrome/
+默认将chromedriver安装在
+/usr/lib64/chromium-browser/
+
+需修改/pdlearn/mydriver.py第13、14和27、28行指向以上路径
+
+直接运行源码需要安装Python的WebDriver组件
 
  `# pip3.7 install selenium`
 
