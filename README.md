@@ -36,7 +36,11 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 
 ## 👍程序特性
 
-支持WIN7以上系统，mac os ，linux，vps等多平台
+<img align="right" width="300" src="https://raw.githubusercontent.com/Alivon/Panda-Learning/master/img_folder/phone.jpg" alt="copy URL to clipboard" />
+
+支持WIN7以上系统，mac os ，linux，vps和树莓派等多个平台，
+
+程序窗口可以最小化
 
 支持多用户同时使用
 
@@ -44,11 +48,11 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 
 支持本地保存钉钉账号密码登陆
 
-支持后台无干扰学习(可选)
+支持后台无干扰学习
 
-支持多线程学习(可选)
+支持多线程学习
 
-学习完毕后自动关机(可选)
+可设置学习完毕后自动关机
 
 
 
@@ -104,7 +108,7 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 
 [![](https://img.shields.io/badge/download-win%20完整版-blue.svg?style=for-the-badge&logo=windows)](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning-32.7z) ![](https://img.shields.io/badge/size-58.4%20mb-9cf.svg?style=social)  首次使用推荐下载
 
-[![](https://img.shields.io/badge/download-win%20更新包-blue.svg?style=for-the-badge&logo=windows)](https://github.com/Alivon/Panda-Learning/raw/master/pandalearning.exe) ![](https://img.shields.io/badge/size-6.91%20mb-9cf.svg?style=social)  下载覆盖即可使用
+[![](https://img.shields.io/badge/download-win%20更新包-blue.svg?style=for-the-badge&logo=windows)](https://github.com/Alivon/Panda-Learning/raw/master/pandalearning.exe) ![](https://img.shields.io/badge/size-6.91%20mb-9cf.svg?style=social)  下载覆盖即可使用，老用户下载
 
 ------
 
