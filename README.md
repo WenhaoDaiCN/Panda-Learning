@@ -38,7 +38,7 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 
 <img align="right" width="300" src="https://raw.githubusercontent.com/Alivon/Panda-Learning/master/img_folder/phone.jpg" alt="copy URL to clipboard" />
 
-支持WIN7以上系统，mac os ，linux，vps和树莓派等多个平台，
+支持WIN7以上系统，mac os ，linux，vps和树莓派等多个平台，右侧为手机操作vps示例
 
 程序窗口可以最小化
 
