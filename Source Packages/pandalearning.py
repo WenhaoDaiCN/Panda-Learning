@@ -66,7 +66,8 @@ def article(cookies, a_log, each):
                     driver_article.get_url(links[i])
                     time.sleep(random.randint(5, 15))
                     for j in range(120):
-                        driver_article.go_js('window.scrollTo(0, document.body.scrollHeight/120*{})'.format(j))
+                        if random.random() > 0.5:
+                            driver_article.go_js('window.scrollTo(0, document.body.scrollHeight/120*{})'.format(j))
                         print("\r文章学习中，文章剩余{}篇,本篇剩余时间{}秒".format(a_log + a_num - i, 120 - j), end="")
                         time.sleep(1)
                     driver_article.go_js('window.scrollTo(0, document.body.scrollHeight)')
@@ -87,8 +88,9 @@ def article(cookies, a_log, each):
                 time.sleep(random.randint(5, 15))
                 remaining = (6 - each[3]) * 4 * num_time
                 for i in range(remaining):
-                    driver_article.go_js(
-                        'window.scrollTo(0, document.body.scrollHeight/{}*{})'.format(remaining, i))
+                    if random.random() > 0.5:
+                        driver_article.go_js(
+                            'window.scrollTo(0, document.body.scrollHeight/{}*{})'.format(remaining, i))
                     print("\r文章时长学习中，文章总时长剩余{}秒".format(remaining - i), end="")
                     time.sleep(1)
                     if i % (120) == 0 and i != remaining:
@@ -123,7 +125,8 @@ def video(cookies, v_log, each):
                     driver_video.get_url(links[i])
                     time.sleep(random.randint(5, 15))
                     for j in range(180):
-                        driver_video.go_js('window.scrollTo(0, document.body.scrollHeight/180*{})'.format(j))
+                        if random.random() > 0.5:
+                            driver_video.go_js('window.scrollTo(0, document.body.scrollHeight/180*{})'.format(j))
                         print("\r视频学习中，视频剩余{}个,本次剩余时间{}秒".format(v_log + v_num - i, 180 - j), end="")
                         time.sleep(1)
                     driver_video.go_js('window.scrollTo(0, document.body.scrollHeight)')
@@ -144,8 +147,9 @@ def video(cookies, v_log, each):
                 time.sleep(random.randint(5, 15))
                 remaining = (6 - each[4]) * 3 * num_time
                 for i in range(remaining):
-                    driver_video.go_js(
-                        'window.scrollTo(0, document.body.scrollHeight/{}*{})'.format(remaining, i))
+                    if random.random() > 0.5:
+                        driver_video.go_js(
+                            'window.scrollTo(0, document.body.scrollHeight/{}*{})'.format(remaining, i))
                     print("\r视频学习中，视频总时长剩余{}秒".format(remaining - i), end="")
                     time.sleep(1)
                     if i % (180) == 0 and i != remaining:
