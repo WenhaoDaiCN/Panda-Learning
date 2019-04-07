@@ -38,23 +38,29 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 
 <img align="right" width="300" src="https://raw.githubusercontent.com/Alivon/Panda-Learning/master/img_folder/phone.jpg" alt="copy URL to clipboard" />
 
-支持WIN7以上系统，mac os ，linux，vps和树莓派等多个平台，右侧为手机操作vps示例
-
-程序窗口可以最小化
-
-支持多用户同时使用
-
-学习期间自动检查分数
-
-支持本地保存钉钉账号密码登陆
-
-支持后台无干扰学习
-
-支持多线程学习
-
-可设置学习完毕后自动关机
 
 
+###### 全平台支持： win，macos，linux，vps，Raspbian-pi等各种平台
+
+`不支持xp`
+
+###### 全程后台静默学习： 也可开启前台学习展示
+
+###### 自动核对学习分数： 根据每日分数学满为止
+
+###### 支持保存账户信息： 可以保存帐户信息每日免去重复登陆
+
+###### 默认多线程学习：  可关闭，建议开启，每日学满只需20分钟
+
+###### 可设置自动关机：  每天下班用办公室电脑学习后自动关机
+
+###### 增强防检测：随机浏览器请求头及自然学习行为模拟
+
+
+
+
+
+`右侧为手机操作vps示例`
 
 
 
