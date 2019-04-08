@@ -130,7 +130,7 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 
 [![](https://img.shields.io/badge/download-deb%20浏览器-orange.svg?style=for-the-badge&logo=google-chrome)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/google-chrome-stable_current_amd64.deb)  ![](https://img.shields.io/badge/size-55.0%20mb-9cf.svg?style=social)   适用于 Debian/Ubuntu
 
-[Fedora/openSUSE dnf安装Chrome和Chromedriver方法](https://github.com/Alivon/Panda-Learning/blob/master/FedoraopenSUSE%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85Chrome%E5%92%8CChromedriver.md)
+[Fedora/openSUSE dnf安装Chrome和Chromedriver方法](<https://github.com/Alivon/Panda-Learning/blob/master/FedoraopenSUSE%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8Panda-Learning%E6%96%B9%E6%B3%95.md>)
 
 
 
