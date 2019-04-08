@@ -39,6 +39,9 @@ class Mydriver:
         elif os.path.exists("/usr/lib64/chromium-browser/chromedriver"):  # linux 包安装chromedriver
             self.driver = self.webdriver.Chrome(executable_path="/usr/lib64/chromium-browser/chromedriver",
                                                 chrome_options=self.options)
+        elif os.path.exists("/usr/local/bin/chromedriver"):  # linux 包安装chromedriver
+            self.driver = self.webdriver.Chrome(executable_path="/usr/local/bin/chromedriver",
+                                                chrome_options=self.options)
         else:
             self.driver = self.webdriver.Chrome(chrome_options=self.options)
 
