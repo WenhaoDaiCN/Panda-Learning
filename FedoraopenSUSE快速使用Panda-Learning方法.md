@@ -1,4 +1,4 @@
-# Fedora/openSUSE使用Panda-Learning方法
+# Fedora/openSUSE快速使用Panda-Learning方法
 ## Fedora/openSUSE快速安装Chrome和ChromeDriver
 ### 1.配置Google Chrome源
 `cp google-chrome.repo /etc/yum.repos.d/`
