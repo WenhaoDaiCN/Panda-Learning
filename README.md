@@ -78,6 +78,10 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 
 ​	注意`mac需要在终端中打开`
 
+​	`二维码登陆弹出右侧提示勿点击停用，直接x掉即可`
+
+<img align="right" width="410" src="https://raw.githubusercontent.com/Alivon/Panda-Learning/master/img_folder/detection.png" alt="copy URL to clipboard" />
+
 ### 🔐进阶使用
 
 ​    快捷方式中或者终端运行时加入参数分别是：
