@@ -178,6 +178,9 @@ win平台可能提示`无法定位程序输入点ucrtbase.terminate于动态链�
 
 ## 📒更新说明
 
+- v 2.5
+  - `Security`  加入防js检测功能，防检测功能更强
+  - `Fixed `  针对强国积分获取更改修复程序获取逻辑
 - v 2.4
   - `Security`  增加随机请求头
   - `Security`  增加文章视频学习随机滑动窗口
