@@ -10,41 +10,47 @@ import os
 class Mydriver:
 
     def __init__(self, noimg=True, nohead=True):
-        self.options = Options()
-        if os.path.exists("./chrome/chrome.exe"):  # win
-            self.options.binary_location = "./chrome/chrome.exe"
-        elif os.path.exists("/opt/google/chrome/chrome"):  # linux
-            self.options.binary_location = "/opt/google/chrome/chrome"
-        if noimg:
-            self.options.add_argument('blink-settings=imagesEnabled=false')  # 不加载图片, 提升速度
-        if nohead:
-            self.options.add_argument('--headless')
-            self.options.add_argument('--disable-extensions')
-            self.options.add_argument('--disable-gpu')
-            self.options.add_argument('--no-sandbox')
-        self.options.add_argument('--mute-audio')  # 关闭声音
-        self.options.add_argument('--window-size=400,500')
-        self.options.add_argument('--window-position=800,0')
-        self.options.add_argument('--log-level=3')
+        try:
+            self.options = Options()
+            if os.path.exists("./chrome/chrome.exe"):  # win
+                self.options.binary_location = "./chrome/chrome.exe"
+            elif os.path.exists("/opt/google/chrome/chrome"):  # linux
+                self.options.binary_location = "/opt/google/chrome/chrome"
+            if noimg:
+                self.options.add_argument('blink-settings=imagesEnabled=false')  # 不加载图片, 提升速度
+            if nohead:
+                self.options.add_argument('--headless')
+                self.options.add_argument('--disable-extensions')
+                self.options.add_argument('--disable-gpu')
+                self.options.add_argument('--no-sandbox')
+            self.options.add_argument('--mute-audio')  # 关闭声音
+            self.options.add_argument('--window-size=400,500')
+            self.options.add_argument('--window-position=800,0')
+            self.options.add_argument('--log-level=3')
 
-        self.options.add_argument('--user-agent={}'.format(user_agent.getheaders()))
-        self.options.add_experimental_option('excludeSwitches',
-                                        ['enable-automation'])
-        self.webdriver = webdriver
-        if os.path.exists("./chrome/chromedriver.exe"):  # win
-            self.driver = self.webdriver.Chrome(executable_path="./chrome/chromedriver.exe",
-                                                chrome_options=self.options)
-        elif os.path.exists("./chromedriver"):  # linux
-            self.driver = self.webdriver.Chrome(executable_path="./chromedriver",
-                                                chrome_options=self.options)
-        elif os.path.exists("/usr/lib64/chromium-browser/chromedriver"):  # linux 包安装chromedriver
-            self.driver = self.webdriver.Chrome(executable_path="/usr/lib64/chromium-browser/chromedriver",
-                                                chrome_options=self.options)
-        elif os.path.exists("/usr/local/bin/chromedriver"):  # linux 包安装chromedriver
-            self.driver = self.webdriver.Chrome(executable_path="/usr/local/bin/chromedriver",
-                                                chrome_options=self.options)
-        else:
-            self.driver = self.webdriver.Chrome(chrome_options=self.options)
+            self.options.add_argument('--user-agent={}'.format(user_agent.getheaders()))
+            self.options.add_experimental_option('excludeSwitches', ['enable-automation'])  # 绕过js检测
+            self.webdriver = webdriver
+            if os.path.exists("./chrome/chromedriver.exe"):  # win
+                self.driver = self.webdriver.Chrome(executable_path="./chrome/chromedriver.exe",
+                                                    chrome_options=self.options)
+            elif os.path.exists("./chromedriver"):  # linux
+                self.driver = self.webdriver.Chrome(executable_path="./chromedriver",
+                                                    chrome_options=self.options)
+            elif os.path.exists("/usr/lib64/chromium-browser/chromedriver"):  # linux 包安装chromedriver
+                self.driver = self.webdriver.Chrome(executable_path="/usr/lib64/chromium-browser/chromedriver",
+                                                    chrome_options=self.options)
+            elif os.path.exists("/usr/local/bin/chromedriver"):  # linux 包安装chromedriver
+                self.driver = self.webdriver.Chrome(executable_path="/usr/local/bin/chromedriver",
+                                                    chrome_options=self.options)
+            else:
+                self.driver = self.webdriver.Chrome(chrome_options=self.options)
+        except:
+            print("=" * 120)
+            print("Mydriver初始化失败")
+            print("=" * 120)
+            raise
+
 
     def login(self):
         print("正在打开二维码登陆界面,请稍后")
