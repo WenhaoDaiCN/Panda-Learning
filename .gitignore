@@ -1,3 +1,6 @@
 .gitignore
 pandaico.ico
 contributors.psd
+
+__pycache__/
+user/
