@@ -171,6 +171,19 @@ def video(cookies, v_log, each):
 
 
 if __name__ == '__main__':
+    # -1 Just4Fun
+    print("""
+            ----------------
+            好好學習，天天向上 
+            ----------------
+                    o   ^__^
+                     o  (oo)\_______
+                        (__)\       )~~z
+                            ||----w||
+                            oo     oo
+    """)
+    time.sleep(2)
+
     #  0 读取版本信息
     start_time = time.time()
     info_shread = threads.MyThread("获取更新信息...", version.up_info)
