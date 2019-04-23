@@ -2,8 +2,8 @@ import requests
 
 
 def up_info():
-    print("\n正在联网获取跟新信息...")
-    __Version = "v2.2 preview"
+    print("\n正在联网获取更新信息...")
+    __Version = "v2.5"
     __INFO = "熊猫学习唯一下载地址为 https://github.com/Alivon/Panda-Learning"
     try:
         updata_log = requests.get(
@@ -15,12 +15,12 @@ def up_info():
         print("="*120)
         if __Version != updata_log[1].split("=")[1]:
             print("当前不是最新版本，建议更新")
+            print("=" * 120)
+            print("更新提要：")
+            for i in updata_log[2:]:
+                print(i)
         print("=" * 120)
-        print("更新提要：")
-        for i in updata_log[2:]:
-            print(i)
-        print("=" * 120)
-        print("更新显示不会打断之前输入操作，请继续...")
+        print("更新显示不会打断之前输入等操作，请继续......（若已输入用户标记直接enter）")
     except:
         print("版本信息网络错误")
 

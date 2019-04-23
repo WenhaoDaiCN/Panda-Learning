@@ -52,12 +52,13 @@ def get_v_log(uname):
     return __v_log
 
 
-def shutdown(stime=False):
+def shutdown(stime):
     if stime:
-        int(stime)
+        stime = int(stime)
         os.system('shutdown -s -t {}'.format(stime))
-        for i in stime:
-            print("\r{}秒后关机".format(i), end="")
+        for i in range(stime):
+            print("\r{}秒后关机".format(stime-i), end="")
             sleep(1)
     else:
-        sleep(1800)
+        print("无自动关机任务，已释放程序内存，10分钟后窗口将自动关闭")
+        sleep(600)
