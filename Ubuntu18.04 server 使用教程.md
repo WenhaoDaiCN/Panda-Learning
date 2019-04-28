@@ -64,7 +64,7 @@ python pandalearning.py
 
 运行结果如下：
 
-![ubuntu](img_floder/ubuntu-run.png)
+![ubuntu](img_folder/ubuntu-run.png)
 
 
 
