@@ -23,7 +23,9 @@ Panda Learning 是一款使用python语言编写的学习工具。
 
 [TOC]
 
+## 🐷telegram 电报
 
+为本项目的telegram: [telegram(点击加入讨论)](<https://t.me/joinchat/HtsCWhNG63tFCOGXVDB58w>) 
 
 
 ## 📃免责声明
@@ -61,6 +63,8 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 
 
 `右侧为手机操作vps示例`
+
+另有安卓本地运行方式，请再issue中查找
 
 
 
