@@ -82,6 +82,10 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 
 ​	注意`mac需要在终端中打开`
 
+​	`二维码登陆弹出右侧提示勿点击停用，直接x掉即可`
+
+<img align="right" width="410" src="https://raw.githubusercontent.com/Alivon/Panda-Learning/master/img_folder/detection.png" alt="copy URL to clipboard" />
+
 ### 🔐进阶使用
 
 ​    快捷方式中或者终端运行时加入参数分别是：
@@ -94,7 +98,7 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 
 ​	`第四个参数为 num 为输入一个数字，表示学习完成后多少秒自动关机。`  
 
-### 📅example win平台
+### 📅示例 win平台
 
 ​    user1 为已经保存了钉钉账户的用户标记
 
@@ -178,6 +182,9 @@ win平台可能提示`无法定位程序输入点ucrtbase.terminate于动态链�
 
 ## 📒更新说明
 
+- v 2.5
+  - `Security`  加入防js检测功能，防检测功能更强
+  - `Fixed `  针对强国积分获取更改修复程序获取逻辑
 - v 2.4
   - `Security`  增加随机请求头
   - `Security`  增加文章视频学习随机滑动窗口
