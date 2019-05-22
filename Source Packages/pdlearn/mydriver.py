@@ -80,6 +80,7 @@ class Mydriver:
         try:
             WebDriverWait(self.driver, 270).until(EC.title_is(u"我的学习"))
             cookies = self.get_cookies()
+            self.quit()
             return cookies
         except:
             print("扫描二维码超时")
