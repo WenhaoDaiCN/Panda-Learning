@@ -4,6 +4,11 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common import exceptions
 from selenium.webdriver.chrome.options import Options
 from pdlearn import user_agent
+from pdlearn import chaojiying
+from PIL import Image
+from configparser import ConfigParser
+import json
+import time
 import os
 
 
@@ -92,11 +97,36 @@ class Mydriver:
             "%3Fappid%3Ddingoankubyrfkttorhpou%26response_type%3Dcode%26scope%3Dsnsapi"
             "_login%26redirect_uri%3Dhttps%3A%2F%2Fpc-api.xuexi.cn%2Fopen%2Fapi%2Fsns%2Fcallback"
         )
+        time.sleep(1) #等待加载
         self.driver.find_elements_by_id("mobilePlaceholder")[0].click()
         self.driver.find_element_by_id("mobile").send_keys(d_name)
         self.driver.find_elements_by_id("mobilePlaceholder")[1].click()
         self.driver.find_element_by_id("pwd").send_keys(pwd)
         self.driver.find_element_by_id("loginBtn").click()
+        time.sleep(1) #等待加载验证码图片
+        self.driver.save_screenshot(d_name+'.png') #网页截图
+        element = self.driver.find_element_by_xpath('//*[@class="indentify_content"]/img')    #找到验证码图片位置
+        print(element.location) #打印元素坐标
+        print(element.size) #打印元素大小
+        left = element.location['x'] #获取left数值
+        top = element.location['y']  #获取top数值
+        right = element.location['x'] + element.size['width'] #获取right数值
+        bottom = element.location['y'] + element.size['height'] #获取bottom数值
+        im = Image.open(d_name+'.png') #读取图片
+        im = im.crop((left, top, right, bottom)) #截取验证码位置
+        im.save('identifyCode.png') #将得到的图片保存在本地
+        #开始识别操作
+        config = ConfigParser()
+        config.read('config.conf',encoding='UTF-8')
+        chaoji = chaojiying.Chaojiying_Client(config.get('identifyCode','UserName'),config.get('identifyCode','Password'), config.get('identifyCode','SoftID')) #用户中心>>软件ID 生成一个替换 96001
+        im_identifyCode = open('identifyCode.png', 'rb').read() #本地图片文件路径 来替换 a.jpg 有时WIN系统须要//
+        code_str = chaoji.PostPic(im_identifyCode, 1104) #识别图片文字并返回(json格式)
+        code = code_str['pic_str']
+        im.save('identifyCode/'+code+'_identifyCode.png') #将得到的图片保存在本地
+        #print(code) #1902 验证码类型
+        self.driver.find_elements_by_id("mobilePlaceholder")[2].click()
+        self.driver.find_element_by_id("identifyCode").send_keys(code)
+        self.driver.find_element_by_id("identifybtn").click()
         try:
             print("登陆中...")
             WebDriverWait(self.driver, 2, 0.1).until(lambda driver: driver.find_element_by_class_name("modal"))
