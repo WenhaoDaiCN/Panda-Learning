@@ -7,10 +7,13 @@
 Panda Learning 是一款使用python语言编写的学习工具。
 本FORK在阿里云市场上随便找了一个图片OCR识别平台接入，解决登录需要验证码的问题，你可以自行在pdlearn/mydriver.py里 def send_captcha_ocr(self,base64):这段中自行修改你喜欢的OCR识别服务
 https://market.aliyun.com/products/57124001/cmapi027426.html
+
 我用的是这个
-本人只负责linux平台
-使用方式python3 pandalearning.py yourname hidden single
 使用的google chrome和chrome driver都是作者推荐的版本，版本不要变。
+本人只负责linux平台
+
+
+使用方式python3 pandalearning.py yourname hidden single
 
 ![学习情景](https://github.com/Alivon/Panda-Learning/blob/master/img_folder/peoplelearning.jpg?raw=true)
 
