@@ -5,7 +5,11 @@ from selenium.common import exceptions
 from selenium.webdriver.chrome.options import Options
 from pdlearn import user_agent
 import os
-
+import sys
+import base64
+import urllib.request
+import urllib.parse
+import json
 
 class Mydriver:
 
@@ -45,6 +49,7 @@ class Mydriver:
                                                     chrome_options=self.options)
             else:
                 self.driver = self.webdriver.Chrome(chrome_options=self.options)
+            #self.driver.set_window_size(1200, 900)
         except:
             print("=" * 120)
             print("Mydriver初始化失败")
@@ -97,11 +102,38 @@ class Mydriver:
         self.driver.find_elements_by_id("mobilePlaceholder")[1].click()
         self.driver.find_element_by_id("pwd").send_keys(pwd)
         self.driver.find_element_by_id("loginBtn").click()
+        pic_src = self.driver.find_element_by_class_name("indentify_content").find_elements_by_tag_name('img')[0].get_attribute('src')
+
+        if pic_src !='':
+            print("遇到验证码!",pic_src)
+            response = urllib.request.urlopen(pic_src)
+            #print(response.status)
+            #print(response.getheaders())
+            #print(response.read())
+            cat_b64 = str(base64.b64encode(response.read()))[2:-1]
+            obj = self.send_captcha_ocr(cat_b64)
+            if obj['code']==0:
+                print('验证码识别结果为:' + obj['data']['captcha'])
+                #self.driver.find_element_by_id("identifyCode").send_keys("123") #这个验证码框默认不可交互
+                self.go_js("document.querySelector('#identifyCode').value='" + obj['data']['captcha']+"'");
+                #print(self.driver.find_element_by_id("identifyCode").get_attribute('value'))
+                self.driver.find_element_by_id("identifybtn").click() #提交按钮
+            else:
+                print('验证码识别出错!')
+            #self.go_js("document.querySelector('.indentify_content').scrollTo();")
+            #screenImg = "/tmp/yzm.png"
+            #self.driver.get_screenshot_as_file(screenImg) #屏幕截图
+
+            #with open(screenImg,"rb") as f:
+            #    imgdata = base64.b64encode(f.read())
+            #    print(str(imgdata))
+
+            
+        #sys.exit(0)
         try:
             print("登陆中...")
             WebDriverWait(self.driver, 2, 0.1).until(lambda driver: driver.find_element_by_class_name("modal"))
-            print(self.driver.find_element_by_class_name("modal").find_elements_by_tag_name("div")[0].text)
-            self.driver.quit()
+            self.quit()
             __login_status = False
         except:
             __login_status = True
@@ -123,3 +155,14 @@ class Mydriver:
 
     def quit(self):
         self.driver.quit()
+    def send_captcha_ocr(self,base64):
+        url = '接口'
+        dict = {'image': base64,'type': '1001','length':4,}
+        data = urllib.parse.urlencode(dict).encode('utf-8')
+        headers={'Authorization':'APPCODE 密钥','Content-Type':'application/x-www-form-urlencoded; charset=UTF-8'};
+        request = urllib.request.Request(url = url,data = data,headers = headers,method = 'POST')
+        response = urllib.request.urlopen(request)
+        content = response.read()
+        if (content):
+            obj = json.loads(content)
+            return obj
