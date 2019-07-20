@@ -5,7 +5,7 @@
 # 🐼Panda Learning
 
 Panda Learning 是一款使用python语言编写的学习工具。
-
+本FORK在阿里云市场上随便找了一个图片OCR识别平台接入，解决登录需要验证码的问题，你可以自行在pdlearn/mydriver.py里 def send_captcha_ocr(self,base64):这段中自行修改你喜欢的OCR识别服务
 
 
 ![学习情景](https://github.com/Alivon/Panda-Learning/blob/master/img_folder/peoplelearning.jpg?raw=true)
@@ -120,17 +120,7 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 
 ## 💾下载地址
 
-[![](https://img.shields.io/badge/download-win%20完整版-blue.svg?style=for-the-badge&logo=windows)](https://github.com/Alivon/Panda-Learning/raw/master/Panda_learning-32.7z) ![](https://img.shields.io/badge/size-58.4%20mb-9cf.svg?style=social)  首次使用推荐下载
 
-[![](https://img.shields.io/badge/download-win%20更新包-blue.svg?style=for-the-badge&logo=windows)](https://github.com/Alivon/Panda-Learning/raw/master/pandalearning.exe) ![](https://img.shields.io/badge/size-6.91%20mb-9cf.svg?style=social)  下载覆盖即可使用，老用户下载
-
-------
-
-[![](https://img.shields.io/badge/download-osx%20程序包-green.svg?style=for-the-badge&logo=apple)](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/pandalearning_macos.zip) ![](https://img.shields.io/badge/size-12.9%20mb-9cf.svg?style=social)   需预先安装Chrome浏览器
-
-[![](https://img.shields.io/badge/download-osx%20浏览器-green.svg?style=for-the-badge&logo=google-chrome)](https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/googlechrome.dmg) ![](https://img.shields.io/badge/size-74.3%20mb-9cf.svg?style=social)   Google Chrome镜像
-
-------
 
 [![](https://img.shields.io/badge/download-linux%20程序-orange.svg?style=for-the-badge&logo=linux)](https://github.com/Alivon/Panda-Learning/raw/linux/pandalearning-linux/pandalearning_linux.tar.gz) ![](https://img.shields.io/badge/size-11.2%20mb-9cf.svg?style=social)   需预先安装Chrome浏览器
 
@@ -151,14 +141,6 @@ Panda Learning为本人python学习交流的开源非营利项目，仅作为程
 
 
 ## 📑常见问题
-
-win平台可能提示`无法定位程序输入点ucrtbase.terminate于动态链接库api-ms-win-crt-runtime-|1-1-0.dll`等缺失dll文件的问题而无法使用，尝试安装`Visual C++ Redistributable for Visual Studio 2015`
-
-[![](https://img.shields.io/badge/download-vc_redist.x64-blue.svg?style=for-the-badge&logo=visualstudiocode)](https://github.com/Alivon/Panda-Learning/raw/master/windows%E4%B8%8D%E8%83%BD%E8%BF%90%E8%A1%8C%E6%97%B6%E5%AE%89%E8%A3%85/vc_redist.x64.exe) 
-
-[![](https://img.shields.io/badge/download-vc_redist.x86-blue.svg?style=for-the-badge&logo=visualstudiocode)](https://github.com/Alivon/Panda-Learning/raw/master/windows%E4%B8%8D%E8%83%BD%E8%BF%90%E8%A1%8C%E6%97%B6%E5%AE%89%E8%A3%85/vc_redist.x86.exe) 
-
-
 
 
 
