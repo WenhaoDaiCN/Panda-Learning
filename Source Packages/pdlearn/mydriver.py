@@ -118,12 +118,16 @@ class Mydriver:
         #开始识别操作
         config = ConfigParser()
         config.read('config.conf',encoding='UTF-8')
-        chaoji = chaojiying.Chaojiying_Client(config.get('identifyCode','UserName'),config.get('identifyCode','Password'), config.get('identifyCode','SoftID')) #用户中心>>软件ID 生成一个替换 96001
-        im_identifyCode = open('identifyCode.png', 'rb').read() #本地图片文件路径 来替换 a.jpg 有时WIN系统须要//
-        code_str = chaoji.PostPic(im_identifyCode, 1104) #识别图片文字并返回(json格式)
-        code = code_str['pic_str']
-        im.save('identifyCode/'+code+'_identifyCode.png') #将得到的图片保存在本地
-        #print(code) #1902 验证码类型
+        if config.get('identifyCode','UseApi') != 'False': 
+            chaoji = chaojiying.Chaojiying_Client(config.get('identifyCode','UserName'),config.get('identifyCode','Password'), config.get('identifyCode','SoftID')) #用户中心>>软件ID 生成一个替换 96001
+            im_identifyCode = open('identifyCode.png', 'rb').read() #本地图片文件路径 来替换 a.jpg 有时WIN系统须要//
+            code_str = chaoji.PostPic(im_identifyCode, 1104) #识别图片文字并返回(json格式)
+            code = code_str['pic_str']
+            im.save('identifyCode/'+code+'_identifyCode.png') #将得到的图片保存在本地
+            print('验证码识别结果：'code) #1902 验证码类型
+        else:
+            print('验证码登录漏洞')
+            code = 'v v '
         self.driver.find_elements_by_id("mobilePlaceholder")[2].click()
         self.driver.find_element_by_id("identifyCode").send_keys(code)
         self.driver.find_element_by_id("identifybtn").click()
